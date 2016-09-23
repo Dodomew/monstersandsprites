@@ -8,6 +8,7 @@
         <meta name="description" content="Portfolio site of Niels Uiterwijk, programmer">
         <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="stylesheet" href="css/style.css">
+        <script   src="https://code.jquery.com/jquery-3.1.1.slim.min.js"   integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="   crossorigin="anonymous"></script>
         
     </head>
     
@@ -22,16 +23,25 @@
             </div>
             
             <div class="mobile-menu">
-            
-                <div class="mobile-menu-button">
                 
-                
-                
+                <div class="dropdown">
+                        
+                    <button onclick="myFunction()" class="dropbtn"></button>
+                        
+                    <div id="myDropdown" class="dropdown-content">
+                          
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                        <a href="#">Item 3</a>
+                        <a href="#">Item 4</a>
+                          
+                    </div>
+                        
                 </div>
-            
+                
             </div>
             
-            <ul class="menu">
+            <ul class="menu-desktop">
 
                 <li><a href="#">item 1</a></li>
                 <li><a href="#">item 2</a></li>
@@ -41,6 +51,53 @@
             </ul>
             
         </div>
+        
+        <div class="header-invisible"></div>
+        
+        <div class="content-desktop">
+        
+            <div class="content-post-desktop">
+            
+                <h1>Hallo</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum porta felis, ac eleifend turpis dictum vel. Aenean volutpat tincidunt nunc in interdum. Ut ac pellentesque libero. Aenean bibendum fringilla enim, ac aliquet arcu varius a. Nunc et mattis neque. Donec posuere sapien sit amet auctor accumsan. Duis euismod ipsum quis odio accumsan semper. Cras venenatis ipsum ac sem consequat, in ullamcorper erat accumsan. Donec in risus scelerisque mi sagittis dignissim a nec tellus. Sed tellus justo, ullamcorper eget sollicitudin sed, elementum eget eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                <img src="images/black_white_shoes01_min1024.jpg" alt="black and white shoes">
+            
+            </div>
+            
+            <div class="content-post-desktop">
+            
+                <h1>Dit is Latijn</h1>
+                <p>Praesent facilisis urna metus, sit amet porta nisi facilisis ac. Aliquam consequat tempor elementum. Nam faucibus et eros nec fermentum. Integer eu congue libero. Cras in pulvinar sapien, non mattis mauris. Integer non nisi ligula. Fusce consectetur malesuada elementum. Etiam feugiat elit massa, vitae luctus arcu tincidunt eu. Pellentesque at tellus eu quam vulputate vestibulum eu in sem. Ut ultrices faucibus lacinia. Integer posuere laoreet sem, maximus euismod tortor. Nullam iaculis iaculis neque, ut consequat ex molestie ac.</p>
+                <img src="images/black_white_shoes08_min1024.jpg">
+            
+            </div>
+        
+        </div>
+        
+        <script>
+        
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        
+        </script>
         
     </body>
     

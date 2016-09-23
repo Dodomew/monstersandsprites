@@ -31,27 +31,37 @@ body {
   width: 100vw;
   height: 100vh;
   margin: auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif; }
 
-/* line 54, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 57, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.header-invisible {
+  width: 100vw;
+  height: 5vh;
+  margin: auto;
+  position: relative;
+  top: 0; }
+
+/* line 66, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .header {
   width: 100vw;
   height: 5vh;
   margin: auto;
   background-color: black;
-  position: fixed; }
+  position: fixed;
+  z-index: 100; }
 
-/* line 63, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 76, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .header-title {
   width: auto;
   height: 5vh;
   color: white;
   float: left;
-  font-family: "Roboto", sans-serif;
-  font-size: 3vh; }
+  font-size: 4vh;
+  margin-left: 1vh; }
 
-/* line 73, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
-.menu {
+/* line 86, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.menu-desktop {
   display: block;
   width: auto;
   height: 5vh;
@@ -59,44 +69,140 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 2vh; }
 
-/* line 83, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
-.menu li {
+/* line 96, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.menu-desktop li {
   display: block;
   float: right;
   padding: 12px;
   margin-right: 2.5vw;
-  height: auto;
-  text-decoration: none;
-  list-style-type: none; }
+  height: auto; }
 
-/* line 94, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 105, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.menu-desktop li a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white; }
+
+/* line 112, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .mobile-menu {
   display: none;
-  width: 10vw;
+  width: 20vw;
   height: 5vh;
   float: right; }
 
-/* line 102, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
-.mobile-menu-button {
-  display: none;
+/* Dropdown Button */
+/* line 121, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.dropbtn {
+  height: 5vh;
+  width: 20vw;
+  border: none;
+  cursor: pointer;
   background-image: url(../images/icon_heart_32_white.png);
   background-repeat: no-repeat;
-  height: 5vh;
-  width: 5vh;
-  margin: auto; }
+  background-position: center;
+  background-color: black; }
+
+/* Dropdown button on hover & focus */
+/* line 134, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: darkgrey; }
+
+/* The container <div> - needed to position the dropdown content */
+/* line 140, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+/* Dropdown Content (Hidden by Default) */
+/* line 147, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 33.3vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  right: 0; }
+
+/* Links inside the dropdown */
+/* line 158, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+/* Change color of dropdown links on hover */
+/* line 167, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.dropdown-content a:hover {
+  background-color: lightgrey; }
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/* line 170, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.show {
+  display: block; }
+
+/* line 174, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.content-desktop {
+  position: relative;
+  width: 70vw;
+  height: auto;
+  margin: 0 auto;
+  background-color: antiquewhite; }
+
+/* line 183, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.content-post-desktop {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  position: relative;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  border-bottom: 1px solid black; }
+
+/* line 194, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.content-post-desktop h1 {
+  font-size: 4vh;
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: 1vh; }
+
+/* line 202, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.content-post-desktop p {
+  font-size: 2vh;
+  text-align: left;
+  line-height: 3vh;
+  font-weight: 300; }
+
+/* line 210, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.content-post-desktop img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding-top: 1vh;
+  padding-bottom: 1vh; }
 
 @media screen and (max-width: 768px) {
-  /* line 116, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
-  .menu {
+  /* line 223, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  .menu-desktop {
     display: none; }
-  /* line 121, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
-  .menu li {
+  /* line 228, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  .menu-desktop li {
     display: none; }
-  /* line 126, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 233, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .mobile-menu {
     display: block; }
-  /* line 131, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 238, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .mobile-menu-button {
-    display: block; } }
+    display: block; }
+  /* line 243, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  .content-desktop {
+    width: 100vw; }
+  /* line 248, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  .content-post-desktop h1 {
+    font-size: 5vh; }
+  /* line 253, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  .content-post-desktop p {
+    font-size: 3vh;
+    line-height: 4vh; } }
 
 /*# sourceMappingURL=style.css.map */
