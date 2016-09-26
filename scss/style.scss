@@ -50,6 +50,7 @@ body
     margin: auto;
     overflow-x: hidden;
     font-family: $font-normal;
+    z-index: 1;
 }
 
 ////////////////////////////////////////////////////////////HEADER/////////////////////////////////////////////////////////////
@@ -184,7 +185,7 @@ body
 {
     width: 80%;
     height: auto;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;
@@ -207,14 +208,40 @@ body
     font-weight: 300;
 }
 
-.content-post-desktop img
+.content-post-desktop-imagecontainer
+{
+    width: 1024px;
+    height: 512px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content-post-desktop-imagecontainer img
+{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out; 
+    transition: opacity 1s ease-in-out;
+}
+
+.content-post-desktop-imagecontainer img.top-image:hover
+{
+    opacity: 0;
+}
+
+/*.content-post-desktop img
 {
     width: 100%;
     height: auto;
     margin: auto;
     padding-top: 1vh;
     padding-bottom: 1vh;
-}
+    position: absolute;
+}*/
 
 ////////////////////////////////////////////////////////////MEDIA QUERIES/////////////////////////////////////////////////////////////
 
@@ -254,6 +281,12 @@ body
     {
         font-size: 3vh;
         line-height: 4vh;
+    }
+    
+    .content-post-desktop-imagecontainer
+    {
+        width: 100%;
+        height: 33vh;
     }
 
 }
