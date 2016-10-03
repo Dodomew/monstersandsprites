@@ -1,0 +1,8 @@
+Database Name: monstersandsprites_db
+Username: root
+ww: -
+Database host: localhost
+table_prefix: wp_
+
+username inlog: Admin
+ww: &eZp^tI@M320UEV#@N

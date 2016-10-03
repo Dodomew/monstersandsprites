@@ -1,0 +1,10 @@
+{
+  "name": "monstersandsprites",
+  "version": "1.0.0",
+  "description": "Portfolio Niels Uiterwijk",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
