@@ -200,28 +200,36 @@ body {
   /* line 241, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .menu-desktop {
     display: none; }
+
   /* line 246, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .menu-desktop li {
     display: none; }
+
   /* line 251, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .mobile-menu {
     display: block; }
+
   /* line 256, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .mobile-menu-button {
     display: block; }
+
   /* line 261, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-desktop {
     width: 100vw; }
+
   /* line 266, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-post-desktop h1 {
     font-size: 5vh; }
+
   /* line 271, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-post-desktop p {
     font-size: 3vh;
     line-height: 4vh; }
+
   /* line 277, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-post-desktop-imagecontainer {
     width: 100%;
     height: 33vh; } }
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */

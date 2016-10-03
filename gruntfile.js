@@ -4,13 +4,13 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				files: {
-					'style/style.css' : 'sass/style.scss'
+					'style/style.css' : 'css/style.css'
 				}
 			}
 		},
 		watch: {
 			css: {
-				files: '**/*.scss',
+				files: 'scss/style.scss',
 				tasks: ['sass']
 			}
 		}
