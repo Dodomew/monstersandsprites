@@ -182,25 +182,6 @@ body
     background-color: antiquewhite;
 }
 
-.content-post-desktop
-{
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    position: relative;
-    padding-top: 2.5vh;
-    padding-bottom: 2.5vh;
-    border-bottom: 1px solid black;
-}
-
-.content-post-desktop h1
-{
-    font-size: 4vh;
-    text-align: left;
-    font-weight: 400;
-    margin-bottom: 1vh;
-}
-
 .content-post-desktop p
 {
     font-size: 2vh;
@@ -232,6 +213,78 @@ body
 .content-post-desktop-imagecontainer img.top-image:hover
 {
     opacity: 0;
+}
+
+////////////////////////////////////////////////////////////CONTENT POST/////////////////////////////////////////////////////////////
+
+.blog-post
+{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+.blog-post p
+{
+    font-size: 2vh;
+    text-align: left;
+    margin-top: 2.5vh;
+    line-height: 2.5vh;
+}
+
+.blog-post a
+{
+    text-decoration: none;
+}
+
+.blog-post-title
+{
+    width: 50%;
+    height: auto;
+    font-size: 4vh;
+    font-weight: 400;
+    color: yellow;
+}
+
+.blog-post-meta
+{
+    width: 50%;
+    height: auto;
+    font-size: 2vh;
+    color: blue;
+    float: left;
+    position: relative;
+    text-align: left;
+}
+
+.blog-comments
+{
+    float: right;
+    width: 50%;
+    font-size: 2vh;
+    color: blue;
+    position: relative;
+    text-align: right;
+}
+
+.blog-thumbnail
+{
+    width: 100%;
+    height: 33.3vh;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 2.5vh;
+}
+
+.blog-thumbnail img
+{
+    min-width: 100%;
+    height: auto;
 }
 
 ////////////////////////////////////////////////////////////MEDIA QUERIES/////////////////////////////////////////////////////////////
