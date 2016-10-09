@@ -171,6 +171,53 @@ body
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+////////////////////////////////////////////////////////////SIDEBAR /////////////////////////////////////////////////////////////
+
+.sidebar-container
+{
+    position: relative;
+    float: left;
+    width: 15vw;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10vh;
+    text-align: left;
+}
+
+.sidebar-container h4
+{
+    font-size: 4vh;
+}
+
+.sidebar-about
+{
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding: 1vw;
+    background-color: bisque;
+}
+
+.sidebar-about p
+{
+    font-size: 2vh;
+}
+
+.sidebar-archive
+{
+    margin: auto;
+    margin-top: 2.5vh;
+    width: 90%;
+    height: auto;
+    padding: 1vw;
+    background-color: bisque;
+}
+
+.list-unstyled
+{
+    list-style-type: none;
+}
+
 ////////////////////////////////////////////////////////////CONTENT DESKTOP/////////////////////////////////////////////////////////////
 
 .content-desktop

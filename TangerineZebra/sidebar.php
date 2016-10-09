@@ -1,11 +1,23 @@
-<h4>About</h4>
-
-<p><?php the_author_meta( 'description' ); ?> </p>
-
-<h4>Archives</h4>
-
-<ol class="list-unstyled">
-
-	<?php wp_get_archives('type=monthly'); ?>
+<div class="sidebar-container">
     
-</ol>
+    <div class="sidebar-about">
+
+        <h4>About</h4>
+
+        <p><?php the_author_meta( 'description', 1 ); ?> </p>
+        
+    </div>
+    
+    <div class="sidebar-archive">
+
+        <h4>Archives</h4>
+
+        <ol class="list-unstyled">
+
+            <?php wp_get_archives('type=monthly'); ?>
+
+        </ol>
+        
+    </div>
+    
+</div>
