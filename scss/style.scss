@@ -47,11 +47,13 @@ $font-normal: 'Roboto', sans-serif;
 body
 {
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     margin: auto;
     overflow-x: hidden;
     font-family: $font-normal;
     z-index: 1;
+    background-color: beige;
 }
 
 ////////////////////////////////////////////////////////////HEADER/////////////////////////////////////////////////////////////
@@ -220,7 +222,7 @@ body
 
 ////////////////////////////////////////////////////////////CONTENT DESKTOP/////////////////////////////////////////////////////////////
 
-.content-desktop
+.content-container
 {
     position: relative;
     width: 70vw;
@@ -334,6 +336,54 @@ body
     height: auto;
 }
 
+////////////////////////////////////////////////////////////PAGER /////////////////////////////////////////////////////////////////
+
+.pager
+{
+    width: 70vw;
+    height: auto;
+    margin: auto;
+    color: black;
+    text-align: center;
+}
+
+.pager a 
+{
+    font-size: 2vh;
+    border-radius: 25px;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    padding: 1vw;
+}
+
+.pager span
+{
+    border-radius: 25px;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1vw;
+    font-size: 3vh;
+    color: red;
+}
+
+////////////////////////////////////////////////////////////FOOTER //////////////////////////////////////////////////////////////////
+
+.footer-container
+{
+    position: relative;
+    width: 70vw;
+    height: 3vh;
+    margin: auto;
+    background-color: bisque;
+    clear: both;
+}
+
+.footer-content
+{
+    
+}
+
 ////////////////////////////////////////////////////////////MEDIA QUERIES/////////////////////////////////////////////////////////////
 
 @media screen and (max-width: 768px) 
@@ -358,6 +408,11 @@ body
         display: block;
     }
     
+    .content-container
+    {
+        width: 100vw;
+    }
+    
     .content-desktop
     {
         width: 100vw;
@@ -378,6 +433,11 @@ body
     {
         width: 100%;
         height: 33vh;
+    }
+    
+    .footer-container
+    {
+        width: 100vw;
     }
 
 }

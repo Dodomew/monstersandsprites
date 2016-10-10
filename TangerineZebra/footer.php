@@ -1,3 +1,15 @@
+</div>    
+
+    <div class="footer-container">
+
+        <div class="footer-content">
+        
+            <p>lalalllaal ik ben een footer</p>
+        
+        </div>
+
+    </div>
+
     <script>
         
             /* When the user clicks on the button, 
@@ -22,8 +34,6 @@
             }
         
         </script>
-
-        <?php wp_footer(); ?>
         
     </body>
     
