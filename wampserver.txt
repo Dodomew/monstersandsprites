@@ -6,3 +6,7 @@ table_prefix: wp_
 
 username inlog: Admin
 ww: &eZp^tI@M320UEV#@N
+
+op laptop
+username: root
+ww: Gir3EMhDFhCm
