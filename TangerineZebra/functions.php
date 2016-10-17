@@ -33,4 +33,9 @@
     }
     add_action( 'pre_get_posts', 'set_posts_per_page');
 
+    add_action('get_header', 'remove_admin_login_header');
+    function remove_admin_login_header() {
+        remove_action('wp_head', '_admin_bar_bump_cb');
+    }
+
 ?>

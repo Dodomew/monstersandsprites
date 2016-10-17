@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				files: {
-					'style/style.css' : 'css/style.css', 'C:/wamp64/www/monstersandsprites/wp-content/themes/TangerineZebra/style.css' : 'css/style.css'
+					'style/style.css' : 'css/style.css', 'C:/wamp64/www/monstersandsprites-local/wp-content/themes/TangerineZebra/style.css' : 'css/style.css'
 				}
 			}
 		},

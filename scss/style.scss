@@ -39,21 +39,30 @@ footer, header, hgroup, menu, nav, section
 $font-normal: 'Roboto', sans-serif;
 
 //variables
+$accent-color: #FF5252;
 
 //mixins
 
 //styling
 
+html
+{
+    min-height: 100%;
+    position: relative;
+}
+
 body
 {
     width: 100vw;
-    height: auto;
+    height: 100%;
     min-height: 100vh;
     margin: auto;
     overflow-x: hidden;
     font-family: $font-normal;
     z-index: 1;
-    background-color: beige;
+    background-color: #BBDEFB;
+    background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+    background-size: 100vw 50vh;
 }
 
 ////////////////////////////////////////////////////////////HEADER/////////////////////////////////////////////////////////////
@@ -72,7 +81,7 @@ body
     width: 100vw;
     height: 5vh;
     margin: auto;
-    background-color: red;
+    background-color: #2196F3;
     position: fixed;
     z-index: 100;
 }
@@ -177,18 +186,26 @@ body
 
 .sidebar-container
 {
-    position: relative;
-    float: left;
+    display: block;
+    z-index: 1;
     width: 15vw;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 10vh;
+    height: 100%;
+    margin: auto;
     text-align: left;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.5);
+    position:absolute;
+    top:0;
+    bottom:0;
+    left: -85vw;
+    right:0;
+    overflow:hidden;
 }
 
 .sidebar-container h4
 {
     font-size: 4vh;
+    margin-left: 1vw;
 }
 
 .sidebar-about
@@ -196,13 +213,16 @@ body
     height: auto;
     width: 90%;
     margin: auto;
-    padding: 1vw;
-    background-color: bisque;
+    margin-top: 10vh;
+    //background-color: bisque;
+    border-radius: 5px;
+    //box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .sidebar-about p
 {
     font-size: 2vh;
+    margin-left: 1vw;
 }
 
 .sidebar-archive
@@ -211,13 +231,15 @@ body
     margin-top: 2.5vh;
     width: 90%;
     height: auto;
-    padding: 1vw;
-    background-color: bisque;
+    //background-color: bisque;
+    border-radius: 5px;
+    //box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .list-unstyled
 {
     list-style-type: none;
+    margin-left: 1vw;
 }
 
 ////////////////////////////////////////////////////////////CONTENT DESKTOP/////////////////////////////////////////////////////////////
@@ -227,8 +249,16 @@ body
     position: relative;
     width: 70vw;
     height: auto;
-    margin: 0 auto;
-    background-color: antiquewhite;
+    margin: 0 auto;  
+    margin-left: 22.5vw;
+    margin-top: 5vh;
+}
+
+.content-desktop
+{
+    background-color: whitesmoke;
+    margin-bottom: 5vh;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.2);
 }
 
 .content-post-desktop p
@@ -274,7 +304,6 @@ body
     position: relative;
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;
-    border-bottom: 1px solid black;
     text-align: left;
 }
 
@@ -386,7 +415,7 @@ body
 
 ////////////////////////////////////////////////////////////MEDIA QUERIES/////////////////////////////////////////////////////////////
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 1024px) 
 {
     .menu-desktop
     {
@@ -411,6 +440,7 @@ body
     .content-container
     {
         width: 100vw;
+        margin-left: 0;
     }
     
     .content-desktop
@@ -438,6 +468,11 @@ body
     .footer-container
     {
         width: 100vw;
+    }
+    
+    .sidebar-container
+    {
+        display: none;
     }
 
 }
