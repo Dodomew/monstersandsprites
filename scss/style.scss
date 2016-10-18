@@ -84,6 +84,7 @@ body
     background-color: #2196F3;
     position: fixed;
     z-index: 100;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.5);
 }
 
 .header-title
@@ -261,6 +262,14 @@ body
     box-shadow: 0 1px 8px rgba(0,0,0,0.2);
 }
 
+.content-desktop-single
+{
+    @extend .content-desktop;
+    width: 70vw;
+    height: auto;
+    margin: auto;
+}
+
 .content-post-desktop p
 {
     font-size: 2vh;
@@ -364,6 +373,69 @@ body
     min-width: 100%;
     height: auto;
 }
+
+////////////////////////////////////////////////////////////COMMENTS /////////////////////////////////////////////////////////////////
+
+.container-comments
+{
+    width: 70vw;
+    height: auto;
+    margin: auto;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+}
+
+#comments.comments-area
+{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.comments-title
+{
+    @extend .blog-post-title;
+    width: 100%;
+    color: black;
+}
+
+.comment-list
+{
+    list-style-type: none;
+    font-size: 2vh;
+}
+
+.comment-author.vcard
+{
+    float: left;
+}
+
+.comment-author.vcard img.photo
+{
+    float: left;
+}
+
+.comment-author.vcard img.avatar
+{
+    float: left;
+}
+
+.comment-meta.commentmetadata a
+{
+    text-decoration: none;
+    float: right;
+}
+
+.comment-list p
+{
+    color: blueviolet;
+    clear: both;
+    font-size: 2vh;
+    padding: 1vw;
+}
+
 
 ////////////////////////////////////////////////////////////PAGER /////////////////////////////////////////////////////////////////
 

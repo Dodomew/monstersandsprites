@@ -2,6 +2,9 @@
 {
 	return;
 } ?>
+
+<div class="container-comments">
+
 	<div id="comments" class="comments-area">
 		<?php if ( have_comments() ) : ?>
 			<h3 class="comments-title">
@@ -26,3 +29,5 @@
 		<?php endif; ?>
 		<?php comment_form(); ?>
 	</div>
+    
+</div>
