@@ -9,7 +9,7 @@
                 "sourceComments": true,
                 "outputStyle": "nested"
             },
-            "linting.collapsed": true
+            "linting.collapsed": false
         }
     }
 }

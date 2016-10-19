@@ -392,19 +392,12 @@ body
     margin: auto;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    padding: 2vw;
 }
 
-.comments-title
+#reply-title.comment-reply-title
 {
-    @extend .blog-post-title;
-    width: 100%;
-    color: black;
-}
-
-.comment-list
-{
-    list-style-type: none;
-    font-size: 2vh;
+    font-size: 3vh;
 }
 
 .comment-author.vcard
@@ -422,20 +415,149 @@ body
     float: left;
 }
 
+.comment-list .vcard cite.fn
+{
+    font-weight: bold;
+    margin-left: 1vw;
+}
+
 .comment-meta.commentmetadata a
 {
+    font-size: 1.5vh;
     text-decoration: none;
     float: right;
+    color: black;
+}
+
+.comment-meta.commentmetadata .comment-edit-link
+{
+    font-weight: bold;
+}
+
+.comment-body
+{
+    padding: 1vw;
+}
+
+.comment-body p
+{
+    clear: both;
+    color: black;
+    padding: 1vw;
+    line-height: 3vh;
+}
+
+.comment-body a.comment-reply-link
+{
+    color: black;
+    font-weight: bold;
+}
+
+textarea
+{
+    margin: auto;
+    width: 100%;
+    border-width: 5px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+textarea#comment
+{
+    width: 50%;
+}
+
+#commentform.comment-form label
+{
+    display: none;
+}
+
+.form-submit #submit.submit
+{
+    height: 3vh;
+    width: 10vw;
+}
+
+.comment-list
+{
+    list-style-type: none;
+    font-size: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.comments-title
+{
+    @extend .blog-post-title;
+    width: 100%;
+    color: black;
+}
+
+.comment-list li
+{
+    list-style-type: none;
 }
 
 .comment-list p
 {
-    color: blueviolet;
-    clear: both;
-    font-size: 2vh;
-    padding: 1vw;
+
 }
 
+.comment-list li ul 
+{
+
+}
+
+.comment-list li ul.children li
+{
+    
+}
+
+.comment-list li ul.children li.alt 
+{
+    
+}
+
+.comment-list li ul.children li.byuser
+{
+    
+}
+
+.comment-list li.byuser
+{
+    
+}
+
+.comment-list li ul.children li.comment
+{
+    
+}
+
+.comment-list li ul.children li.bypostauthor
+{
+    
+}
+
+.comment-list li ul.children li.comment-author-admin
+{
+    
+}
+
+.comment-list .even
+{
+    background-color: gainsboro;
+}
+
+.comment-list .odd
+{
+    background-color: grey;
+}
+
+.comment-respond .comment-form .logged-in-as a
+{
+    font-weight: bold;
+    color: black;
+}
 
 ////////////////////////////////////////////////////////////PAGER /////////////////////////////////////////////////////////////////
 
