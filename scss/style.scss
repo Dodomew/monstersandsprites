@@ -347,6 +347,7 @@ body
     float: left;
     position: relative;
     text-align: left;
+    margin-bottom: 2.5vh;
 }
 
 .blog-comments
@@ -357,6 +358,7 @@ body
     color: blue;
     position: relative;
     text-align: right;
+    margin-bottom: 2.5vh;
 }
 
 .blog-thumbnail
@@ -366,11 +368,13 @@ body
     overflow: hidden;
     margin: 0 auto;
     padding-top: 2.5vh;
+    display: block;
 }
 
 .blog-thumbnail img
 {
-    min-width: 100%;
+    display: block;
+    width: 100%;
     height: auto;
 }
 
@@ -559,6 +563,34 @@ textarea#comment
     color: black;
 }
 
+.form-submit #submit.submit
+{
+    background-color: blue;
+    border-width: 0px;
+    font-weight: bold;
+}
+
+.form-submit #submit.submit:hover
+{
+    background-color: yellow;
+}
+
+////////////////////////////////////////////////////////////PORTFOLIO /////////////////////////////////////////////////////////////////
+
+.content-portfolio-container
+{
+    width: 60vw;
+    height: auto;
+    margin: auto;
+}
+
+.blog-square
+{
+    width: 25vw;
+    height: 25vw;
+    margin: auto;
+}
+
 ////////////////////////////////////////////////////////////PAGER /////////////////////////////////////////////////////////////////
 
 .pager
@@ -595,16 +627,30 @@ textarea#comment
 .footer-container
 {
     position: relative;
-    width: 70vw;
-    height: 3vh;
+    width: 85vw;
+    height: 5vh;
     margin: auto;
+    margin-left: 14.5vw;
+    margin-top: 5vh;
     background-color: bisque;
     clear: both;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
 }
 
 .footer-content
 {
-    
+    width: 30%;
+    height: 100%;
+    margin: auto;
+}
+
+.footer-content-social
+{
+    height: 100%;
+    width: 33.3%;
+    float: left;
+    margin: auto;
 }
 
 ////////////////////////////////////////////////////////////MEDIA QUERIES/////////////////////////////////////////////////////////////
