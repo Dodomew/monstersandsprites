@@ -447,12 +447,24 @@ textarea#comment {
   margin: auto; }
 
 /* line 587, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
-.blog-square {
-  width: 25vw;
-  height: 25vw;
-  margin: auto; }
+.blog-post-card {
+  width: 100%;
+  height: 20vh;
+  margin: auto;
+  background-color: aliceblue;
+  margin-top: 2.5vh; }
 
 /* line 596, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.blog-post-square {
+  position: relative;
+  width: 15vh;
+  height: 15vh;
+  float: left;
+  overflow: hidden;
+  margin-top: 2.5vh;
+  margin-left: 1vw; }
+
+/* line 609, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .pager {
   width: 70vw;
   height: auto;
@@ -460,7 +472,7 @@ textarea#comment {
   color: black;
   text-align: center; }
 
-/* line 605, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 618, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .pager a {
   font-size: 2vh;
   border-radius: 25px;
@@ -469,7 +481,7 @@ textarea#comment {
   color: black;
   padding: 1vw; }
 
-/* line 615, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 628, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .pager span {
   border-radius: 25px;
   text-decoration: none;
@@ -478,7 +490,7 @@ textarea#comment {
   font-size: 3vh;
   color: red; }
 
-/* line 627, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 640, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .footer-container {
   position: relative;
   width: 85vw;
@@ -491,13 +503,13 @@ textarea#comment {
   padding-left: 0.5vw;
   padding-right: 0.5vw; }
 
-/* line 641, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 654, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .footer-content {
   width: 30%;
   height: 100%;
   margin: auto; }
 
-/* line 648, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 661, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .footer-content-social {
   height: 100%;
   width: 33.3%;
@@ -505,50 +517,50 @@ textarea#comment {
   margin: auto; }
 
 @media screen and (max-width: 1024px) {
-  /* line 660, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 673, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .menu-desktop {
     display: none; }
 
-  /* line 665, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 678, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .menu-desktop li {
     display: none; }
 
-  /* line 670, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 683, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .mobile-menu {
     display: block; }
 
-  /* line 675, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 688, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .mobile-menu-button {
     display: block; }
 
-  /* line 680, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 693, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-container {
     width: 100vw;
     margin-left: 0; }
 
-  /* line 686, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 699, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-desktop, .content-desktop-single {
     width: 100vw; }
 
-  /* line 691, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 704, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-post-desktop h1 {
     font-size: 5vh; }
 
-  /* line 696, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 709, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-post-desktop p {
     font-size: 3vh;
     line-height: 4vh; }
 
-  /* line 702, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 715, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-post-desktop-imagecontainer {
     width: 100%;
     height: 33vh; }
 
-  /* line 708, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 721, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .footer-container {
     width: 100vw; }
 
-  /* line 713, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 726, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .sidebar-container {
     display: none; } }
 /*# sourceMappingURL=style.css.map */
