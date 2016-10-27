@@ -19,16 +19,16 @@
                 
                 </div>
                 
-            <div class="blog-thumbnail">
-                              
-                <?php if ( has_post_thumbnail() ) 
-                {
-                    the_post_thumbnail();
-                } ?>
+           <?php if(has_post_thumbnail()): ?>
+                <figure class="blog-thumbnail">
+                    <a href="<?php the_permalink() ?>" title="<?php the_title() ?>">
+                        <?php the_post_thumbnail() ?>
+                    </a> 
+                </figure>
                 
-            </div>
+			<?php endif ?>
 
-                <?php the_excerpt(); ?>
+			<?php the_excerpt(); ?>
 
         </div><!-- /.blog-post -->
         

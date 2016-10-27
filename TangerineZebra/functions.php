@@ -16,7 +16,7 @@
     function startwordpress_google_fonts() 
     {
         wp_register_style('OpenSans', 'http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
-        wp_enqueue_style( 'OpenSans');
+        wp_enqueue_style( 'OpenSans'); 
     }
 
     add_action('wp_print_styles', 'startwordpress_google_fonts');
@@ -27,9 +27,8 @@
     // Support Featured Images
     add_theme_support( 'post-thumbnails' );
     //Note: 'true' enables hard cropping so each image is exactly those dimensions and automatically cropped
-    add_image_size( 'feature-image', 960, 500, true ); 
-    add_image_size( 'medium-thumb', 300, 156, true );
-    add_image_size( 'small-thumb', 75, 75, true );
+    add_image_size( 'feature-image', 960, 540, true ); 
+    add_image_size( 'medium-thumb', 350, 350, true );
 
     // Define additional "post thumbnails". Relies on MultiPostThumbnails to work
     if (class_exists('MultiPostThumbnails')) {
