@@ -35,34 +35,46 @@ html {
 body {
   width: 100vw;
   height: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   margin: auto;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   z-index: 1;
-  background-color: #BBDEFB;
-  background-image: linear-gradient(transparent 50%, rgba(255, 255, 255, 0.5) 50%);
-  background-size: 100vw 50vh; }
+  /*background-color: #BBDEFB;
+    background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+    background-size: 100vw 95vh;*/
+  background: linear-gradient(45deg, #92baac 45px, transparent 45px) 64px 64px, linear-gradient(45deg, #92baac 45px, transparent 45px, transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px), linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px, #92baac 68px, #92baac 113px, transparent 113px, transparent 158px, #92baac 158px);
+  background-color: #e1ebbd;
+  background-size: 128px 128px;
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+  background-color: #556;
+  background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px; }
 
-/* line 70, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 99, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .header-invisible {
   width: 100vw;
   height: 5vh;
   margin: auto;
+  margin-bottom: 5vh;
   position: relative;
   top: 0; }
 
-/* line 79, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 109, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .header {
   width: 100vw;
   height: 5vh;
   margin: auto;
   background-color: #2196F3;
+  background: linear-gradient(to right, #2196f3, #21c8f3);
   position: fixed;
   z-index: 100;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5); }
 
-/* line 90, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 121, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .header-title {
   width: auto;
   height: 5vh;
@@ -71,7 +83,7 @@ body {
   font-size: 4vh;
   margin-left: 1vh; }
 
-/* line 100, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 131, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .menu-desktop {
   display: block;
   width: auto;
@@ -80,7 +92,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 2vh; }
 
-/* line 110, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 141, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .menu-desktop li {
   display: block;
   float: right;
@@ -88,13 +100,13 @@ body {
   margin-right: 2.5vw;
   height: auto; }
 
-/* line 119, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 150, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .menu-desktop li a {
   text-decoration: none;
   list-style-type: none;
   color: white; }
 
-/* line 126, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 157, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .mobile-menu {
   display: none;
   width: 20vw;
@@ -102,7 +114,7 @@ body {
   float: right; }
 
 /* Dropdown Button */
-/* line 135, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 166, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropbtn {
   height: 5vh;
   width: 20vw;
@@ -114,18 +126,18 @@ body {
   background-color: black; }
 
 /* Dropdown button on hover & focus */
-/* line 148, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 179, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropbtn:hover, .dropbtn:focus {
   background-color: darkgrey; }
 
 /* The container <div> - needed to position the dropdown content */
-/* line 154, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 185, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropdown {
   position: relative;
   display: inline-block; }
 
 /* Dropdown Content (Hidden by Default) */
-/* line 161, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 192, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -135,7 +147,7 @@ body {
   right: 0; }
 
 /* Links inside the dropdown */
-/* line 172, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 203, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropdown-content a {
   color: red;
   padding: 12px 16px;
@@ -143,16 +155,16 @@ body {
   display: block; }
 
 /* Change color of dropdown links on hover */
-/* line 181, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 212, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropdown-content a:hover {
   background-color: lightgrey; }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-/* line 184, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 215, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .show {
   display: block; }
 
-/* line 188, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 219, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .sidebar-container {
   display: block;
   z-index: 1;
@@ -169,12 +181,12 @@ body {
   right: 0;
   overflow: hidden; }
 
-/* line 206, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 237, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .sidebar-container h4 {
   font-size: 4vh;
   margin-left: 1vw; }
 
-/* line 212, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 243, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .sidebar-about {
   height: auto;
   width: 90%;
@@ -182,12 +194,12 @@ body {
   margin-top: 10vh;
   border-radius: 5px; }
 
-/* line 223, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 254, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .sidebar-about p {
   font-size: 2vh;
   margin-left: 1vw; }
 
-/* line 229, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 260, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .sidebar-archive {
   margin: auto;
   margin-top: 2.5vh;
@@ -195,12 +207,12 @@ body {
   height: auto;
   border-radius: 5px; }
 
-/* line 240, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 271, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .list-unstyled {
   list-style-type: none;
   margin-left: 1vw; }
 
-/* line 248, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 279, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .content-container {
   position: relative;
   width: 70vw;
@@ -209,48 +221,26 @@ body {
   margin-left: 22.5vw;
   margin-top: 5vh; }
 
-/* line 258, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 289, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .content-desktop, .content-desktop-single {
   background-color: whitesmoke;
   margin-bottom: 5vh;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2); }
 
-/* line 265, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 296, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .content-desktop-single {
   width: 70vw;
   height: auto;
   margin: auto; }
 
-/* line 273, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 304, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .content-post-desktop p {
   font-size: 2vh;
   text-align: left;
   line-height: 3vh;
   font-weight: 300; }
 
-/* line 281, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
-.content-post-desktop-imagecontainer {
-  width: 1024px;
-  height: 512px;
-  margin: 0 auto;
-  position: relative; }
-
-/* line 289, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
-.content-post-desktop-imagecontainer img {
-  width: inherit;
-  height: inherit;
-  position: absolute;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  -ms-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out; }
-
-/* line 301, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
-.content-post-desktop-imagecontainer img.top-image:hover {
-  opacity: 0; }
-
-/* line 308, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 314, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post {
   width: 80%;
   height: auto;
@@ -260,18 +250,18 @@ body {
   padding-bottom: 2.5vh;
   text-align: left; }
 
-/* line 319, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 325, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post p {
   font-size: 2vh;
   text-align: left;
   margin-top: 2.5vh;
   line-height: 2.5vh; }
 
-/* line 327, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 333, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post a {
   text-decoration: none; }
 
-/* line 332, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 338, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-title, .comments-title {
   width: 50%;
   height: auto;
@@ -279,7 +269,7 @@ body {
   font-weight: 400;
   color: yellow; }
 
-/* line 341, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 347, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-meta {
   width: 50%;
   height: auto;
@@ -287,31 +277,35 @@ body {
   color: blue;
   float: left;
   position: relative;
-  text-align: left; }
+  text-align: left;
+  margin-bottom: 2.5vh; }
 
-/* line 352, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 359, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-comments {
   float: right;
   width: 50%;
   font-size: 2vh;
   color: blue;
   position: relative;
-  text-align: right; }
+  text-align: right;
+  margin-bottom: 2.5vh; }
 
-/* line 362, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 370, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-thumbnail {
   width: 100%;
   height: 33.3vh;
   overflow: hidden;
   margin: 0 auto;
-  padding-top: 2.5vh; }
+  padding-top: 2.5vh;
+  display: block; }
 
-/* line 371, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 380, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-thumbnail img {
-  min-width: 100%;
+  display: block;
+  width: 100%;
   height: auto; }
 
-/* line 379, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 389, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .container-comments {
   width: 70vw;
   height: auto;
@@ -319,7 +313,7 @@ body {
   background-color: whitesmoke;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2); }
 
-/* line 388, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 398, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 #comments.comments-area {
   width: 80%;
   height: auto;
@@ -328,55 +322,55 @@ body {
   margin-bottom: 5vh;
   padding: 2vw; }
 
-/* line 398, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 408, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 #reply-title.comment-reply-title {
   font-size: 3vh; }
 
-/* line 403, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 413, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-author.vcard {
   float: left; }
 
-/* line 408, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 418, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-author.vcard img.photo {
   float: left; }
 
-/* line 413, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 423, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-author.vcard img.avatar {
   float: left; }
 
-/* line 418, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 428, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-list .vcard cite.fn {
   font-weight: bold;
   margin-left: 1vw; }
 
-/* line 424, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 434, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-meta.commentmetadata a {
   font-size: 1.5vh;
   text-decoration: none;
   float: right;
   color: black; }
 
-/* line 432, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 442, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-meta.commentmetadata .comment-edit-link {
   font-weight: bold; }
 
-/* line 437, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 447, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-body {
   padding: 1vw; }
 
-/* line 442, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 452, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-body p {
   clear: both;
   color: black;
   padding: 1vw;
   line-height: 3vh; }
 
-/* line 450, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 460, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-body a.comment-reply-link {
   color: black;
   font-weight: bold; }
 
-/* line 456, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 466, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 textarea {
   margin: auto;
   width: 100%;
@@ -384,49 +378,83 @@ textarea {
   margin-top: 1vh;
   margin-bottom: 1vh; }
 
-/* line 465, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 475, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 textarea#comment {
   width: 50%; }
 
-/* line 470, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 480, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 #commentform.comment-form label {
   display: none; }
 
-/* line 475, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 485, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .form-submit #submit.submit {
   height: 3vh;
   width: 10vw; }
 
-/* line 481, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 491, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-list {
   list-style-type: none;
   font-size: 2vh;
   margin-top: 2vh;
   margin-bottom: 2vh; }
 
-/* line 489, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 499, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comments-title {
   width: 100%;
   color: black; }
 
-/* line 496, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 506, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-list li {
   list-style-type: none; }
 
-/* line 546, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 556, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-list .even {
   background-color: gainsboro; }
 
-/* line 551, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 561, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-list .odd {
   background-color: grey; }
 
-/* line 556, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 566, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-respond .comment-form .logged-in-as a {
   font-weight: bold;
   color: black; }
 
-/* line 564, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 572, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.form-submit #submit.submit {
+  background-color: blue;
+  border-width: 0px;
+  font-weight: bold; }
+
+/* line 579, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.form-submit #submit.submit:hover {
+  background-color: yellow; }
+
+/* line 586, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.content-portfolio-container {
+  width: 70vw;
+  min-height: 100%;
+  margin: auto; }
+
+/* line 593, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.blog-post-card {
+  width: 20vw;
+  height: 20vw;
+  margin: auto;
+  background-color: red;
+  margin-left: 2.5vw;
+  margin-bottom: 2.5vw;
+  float: left; }
+
+/* line 604, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.blog-post-square {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden; }
+
+/* line 615, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .pager {
   width: 70vw;
   height: auto;
@@ -434,7 +462,7 @@ textarea#comment {
   color: black;
   text-align: center; }
 
-/* line 573, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 624, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .pager a {
   font-size: 2vh;
   border-radius: 25px;
@@ -443,7 +471,7 @@ textarea#comment {
   color: black;
   padding: 1vw; }
 
-/* line 583, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 634, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .pager span {
   border-radius: 25px;
   text-decoration: none;
@@ -452,60 +480,76 @@ textarea#comment {
   font-size: 3vh;
   color: red; }
 
-/* line 595, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 646, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .footer-container {
   position: relative;
-  width: 70vw;
-  height: 3vh;
+  width: 100vw;
+  height: 5vh;
   margin: auto;
   background-color: bisque;
-  clear: both; }
+  clear: both;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw; }
+
+/* line 658, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.footer-content {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  margin-left: 15vw; }
+
+/* line 666, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.footer-content-social {
+  height: 100%;
+  width: 33.3%;
+  float: left;
+  margin: auto; }
 
 @media screen and (max-width: 1024px) {
-  /* line 614, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 678, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .menu-desktop {
     display: none; }
 
-  /* line 619, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 683, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .menu-desktop li {
     display: none; }
 
-  /* line 624, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 688, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .mobile-menu {
     display: block; }
 
-  /* line 629, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 693, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .mobile-menu-button {
     display: block; }
 
-  /* line 634, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 698, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-container {
     width: 100vw;
     margin-left: 0; }
 
-  /* line 640, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 704, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-desktop, .content-desktop-single {
     width: 100vw; }
 
-  /* line 645, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 709, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-post-desktop h1 {
     font-size: 5vh; }
 
-  /* line 650, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 714, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-post-desktop p {
     font-size: 3vh;
     line-height: 4vh; }
 
-  /* line 656, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 720, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-post-desktop-imagecontainer {
     width: 100%;
     height: 33vh; }
 
-  /* line 662, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 726, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .footer-container {
     width: 100vw; }
 
-  /* line 667, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  /* line 731, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .sidebar-container {
     display: none; } }
 /*# sourceMappingURL=style.css.map */

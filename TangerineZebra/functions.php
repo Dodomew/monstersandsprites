@@ -5,10 +5,12 @@
     function startwordpress_scripts() 
     {
         wp_enqueue_style( 'blog', get_template_directory_uri() . '/css/style.css' );
-        //wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.6', true );
     }
 
     add_action( 'wp_enqueue_scripts', 'startwordpress_scripts' );
+
+    // Load external file to add support for MultiPostThumbnails. Allows you to set more than one "feature image" per post.
+    require_once('library/multi-post-thumbnails.php');
 
     // Add Google Fonts
     function startwordpress_google_fonts() 
@@ -24,6 +26,21 @@
 
     // Support Featured Images
     add_theme_support( 'post-thumbnails' );
+    //Note: 'true' enables hard cropping so each image is exactly those dimensions and automatically cropped
+    add_image_size( 'feature-image', 960, 500, true ); 
+    add_image_size( 'medium-thumb', 300, 156, true );
+    add_image_size( 'small-thumb', 75, 75, true );
+
+    // Define additional "post thumbnails". Relies on MultiPostThumbnails to work
+    if (class_exists('MultiPostThumbnails')) {
+        new MultiPostThumbnails(array(
+            'label' => '2nd Feature Image',
+            'id' => 'feature-image-2',
+            'post_type' => 'post'
+            )
+        );
+    }
+
 
     //set x number of posts per page
     function set_posts_per_page( $query ) {

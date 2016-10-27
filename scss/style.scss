@@ -55,14 +55,43 @@ body
 {
     width: 100vw;
     height: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     margin: auto;
     overflow-x: hidden;
     font-family: $font-normal;
     z-index: 1;
-    background-color: #BBDEFB;
+    
+    /*background-color: #BBDEFB;
     background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
-    background-size: 100vw 50vh;
+    background-size: 100vw 95vh;*/
+    
+    background:
+linear-gradient(45deg, #92baac 45px, transparent 45px)64px 64px,
+linear-gradient(45deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
+linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
+background-color:#e1ebbd;
+background-size: 128px 128px;
+    
+    background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+    
+    background-color:#556;
+background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+background-size:80px 140px;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    
 }
 
 ////////////////////////////////////////////////////////////HEADER/////////////////////////////////////////////////////////////
@@ -72,6 +101,7 @@ body
     width: 100vw;
     height: 5vh;
     margin: auto;
+    margin-bottom: 5vh;
     position: relative;
     top: 0;
 }
@@ -82,6 +112,7 @@ body
     height: 5vh;
     margin: auto;
     background-color: #2196F3;
+    background: linear-gradient(to right, rgba(33,150,243, 1), rgba(33,200,243, 1));
     position: fixed;
     z-index: 100;
     box-shadow: 0 1px 6px rgba(0,0,0,0.5);
@@ -276,31 +307,6 @@ body
     text-align: left;
     line-height: 3vh;
     font-weight: 300;
-}
-
-.content-post-desktop-imagecontainer
-{
-    width: 1024px;
-    height: 512px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.content-post-desktop-imagecontainer img
-{
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out; 
-    transition: opacity 1s ease-in-out;
-}
-
-.content-post-desktop-imagecontainer img.top-image:hover
-{
-    opacity: 0;
 }
 
 ////////////////////////////////////////////////////////////CONTENT POST/////////////////////////////////////////////////////////////
@@ -579,29 +585,29 @@ textarea#comment
 
 .content-portfolio-container
 {
-    width: 60vw;
-    height: auto;
+    width: 70vw;
+    min-height: 100%;
     margin: auto;
 }
 
 .blog-post-card
 {
-    width: 100%;
-    height: 20vh;
+    width: 20vw;
+    height: 20vw;
     margin: auto;
-    background-color: aliceblue;
-    margin-top: 2.5vh;
+    background-color: red;
+    margin-left: 2.5vw;
+    margin-bottom: 2.5vw;
+    float: left;
 }
 
 .blog-post-square
 {
     position: relative;
-    width: 15vh;
-    height: 15vh;
+    width: 100%;
+    height: 100%;
     float: left;
     overflow: hidden;
-    margin-top: 2.5vh;
-    margin-left: 1vw;
 }
 
 ////////////////////////////////////////////////////////////PAGER /////////////////////////////////////////////////////////////////
@@ -640,11 +646,9 @@ textarea#comment
 .footer-container
 {
     position: relative;
-    width: 85vw;
+    width: 100vw;
     height: 5vh;
     margin: auto;
-    margin-left: 14.5vw;
-    margin-top: 5vh;
     background-color: bisque;
     clear: both;
     padding-left: 0.5vw;
@@ -653,9 +657,10 @@ textarea#comment
 
 .footer-content
 {
-    width: 30%;
+    width: 70%;
     height: 100%;
     margin: auto;
+    margin-left: 15vw;
 }
 
 .footer-content-social
