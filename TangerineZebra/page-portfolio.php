@@ -2,9 +2,7 @@
 /*
 Template Name: Portfolio
 */
-
 get_header(); 
-
 ?>
 
 <div class="content-portfolio-container">
@@ -20,10 +18,15 @@ get_header();
         <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
 
             <div class="blog-post-card">
-                <div class="blog-post-square">
+                <figure class="blog-post-square">
+                    
+                    <div class="blog-post-image-wrapper">
+                        
+                    <div class="blog-post-square-visible-image">
                     <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
                         <?php the_post_thumbnail('medium-thumb'); ?> <!-- hier staat foto 1. --> 
                     </a>
+                </div>
                     <?php
                     
             if (class_exists('MultiPostThumbnails')) 
@@ -36,17 +39,31 @@ get_header();
                     $image_thumb_url = wp_get_attachment_image_src( $image_id,'medium-thumb');  // define thumb src based on image ID
                     $image_feature_url = wp_get_attachment_image_src( $image_id,'feature-image' ); // define full size src based on image ID
                     $attr = array(
-                        'class' => "folio-sample",      // set custom class
+                        'class' => "post-thumb-image",      // set custom class
                         'rel' => $image_thumb_url[0],   // sets the url for the image thumbnails size
                         'src' => $image_feature_url[0], // sets the url for the full image size 
                     );                                                                                      
                     // Use wp_get_attachment_image instead of standard MultiPostThumbnails to be able to tweak attributes
-                    $image = wp_get_attachment_image( $image_id, 'medium-thumb', false, $attr );  //HIER STAAT FOTO2.                    
-                    echo $image;
+                    $image = wp_get_attachment_image( $image_id, 'medium-thumb', false, $attr );  //HIER STAAT FOTO2.      ?>
+                    
+                    <div class="blog-post-square-hidden-image">
+                        
+                        <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"></a>
+                        
+                        <?php
+                    
+                            echo $image;
+                    
+                        ?>
+                    </div>
+                    <?php
                 }
             }
             ?>
-                </div>
+                    </div>
+                    
+                </figure>
+
             </div>
     
             
@@ -65,7 +82,5 @@ get_header();
 </div>
 
 <?php 
-
 get_footer();
-
 ?>
