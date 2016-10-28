@@ -19,13 +19,18 @@ get_header();
 
             <div class="blog-post-card">
                 <figure class="blog-post-square">
-                    
+                     <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
                     <div class="blog-post-image-wrapper">
                         
+                        <div class="blog-post-image-title">
+                        
+                            <?php the_title_attribute(); ?>
+                            
+                        </div>
+                        
                     <div class="blog-post-square-visible-image">
-                    <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+                   
                         <?php the_post_thumbnail('medium-thumb'); ?> <!-- hier staat foto 1. --> 
-                    </a>
                 </div>
                     <?php
                     
@@ -48,8 +53,6 @@ get_header();
                     
                     <div class="blog-post-square-hidden-image">
                         
-                        <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"></a>
-                        
                         <?php
                     
                             echo $image;
@@ -61,6 +64,7 @@ get_header();
             }
             ?>
                     </div>
+                    </a>
                     
                 </figure>
 

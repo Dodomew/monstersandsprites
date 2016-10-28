@@ -613,6 +613,13 @@ textarea#comment
     transition: all 0.5s ease-in-out;
 }
 
+.blog-post-image-title
+{
+    position: absolute;
+    font-size: 2vh;
+    z-index: 100;
+}
+
 .blog-post-square-visible-image
 {
     display: block;
