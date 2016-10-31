@@ -38,8 +38,26 @@ footer, header, hgroup, menu, nav, section
 //font variables
 $font-normal: 'Roboto', sans-serif;
 
-//variables
-$accent-color: #FF5252;
+//variables colors
+/* blue + orange
+$dark-primary-color: #303F9F;
+$primary-color: #3F51B5;
+$light-primary-color: #C5CAE9;
+$text-icons-color: #FFFFFF;
+$accent-color: #FF5722;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$divider-color: #BDBDBD;
+*/
+
+$dark-primary-color: #FFA000;
+$primary-color: #FFC107;
+$light-primary-color: #FFECB3;
+$text-icons-color: #212121;
+$accent-color: #4CAF50;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$divider-color: #BDBDBD;
 
 //mixins
 
@@ -60,8 +78,8 @@ body
     margin: auto;
     overflow-x: hidden;
     font-family: $font-normal;
-    z-index: 1;    
-    background-color: blanchedalmond;
+    z-index: 1;
+    background-color: $primary-color;
 }
 
 ////////////////////////////////////////////////////////////HEADER/////////////////////////////////////////////////////////////
@@ -81,8 +99,7 @@ body
     width: 100vw;
     height: 5vh;
     margin: auto;
-    background-color: #2196F3;
-    background: linear-gradient(to right, rgba(33,150,243, 1), rgba(33,200,243, 1));
+    background-color: $dark-primary-color;
     position: fixed;
     z-index: 100;
     box-shadow: 0 1px 6px rgba(0,0,0,0.5);
@@ -92,7 +109,7 @@ body
 {
     width: auto;
     height: 5vh;
-    color: white;
+    color: #FFFFFF;
     float: left;
     font-size: 4vh;
     margin-left: 1vh;
@@ -121,7 +138,7 @@ body
 {
     text-decoration: none;
     list-style-type: none;
-    color: white;
+    color: #FFFFFF;
 }
 
 .mobile-menu
@@ -142,13 +159,13 @@ body
     background-image: url(../images/icon_heart_32_white.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;
+    background-color: $dark-primary-color;
 }
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus 
 {
-    background-color: darkgrey;
+    background-color: $accent-color;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -163,7 +180,7 @@ body
 {
     display: none;
     position: absolute;
-    background-color: black;
+    background-color: $dark-primary-color;
     min-width: 33.3vw;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     right: 0;
@@ -179,7 +196,7 @@ body
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: lightgrey}
+.dropdown-content a:hover {background-color: $secondary-text-color};
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
@@ -202,7 +219,7 @@ body
     height: 100%;
     margin: auto;
     text-align: left;
-    background-color: whitesmoke;
+    background-color: #FFFFFF;
     box-shadow: 0 1px 8px rgba(0,0,0,0.5);
     position:absolute;
     top:0;
@@ -267,25 +284,24 @@ body
 .content-desktop
 {
     margin: auto;
-    background-color: whitesmoke;
+    background-color: #FFFFFF;
     margin-bottom: 5vh;
-    box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     width: 70vw;
     height: auto;
 }
 
-/*.content-desktop-single
+.content-desktop-single
 {
     @extend .content-desktop;
     width: 70vw;
     height: auto;
     margin: auto;
-}*/
+}
 
 .content-post-desktop p
 {
     font-size: 2vh;
-    text-align: left;
     line-height: 3vh;
     font-weight: 300;
 }
@@ -300,15 +316,14 @@ body
     position: relative;
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;
-    text-align: left;
 }
 
 .blog-post p
 {
     font-size: 2vh;
-    text-align: left;
-    margin-top: 2.5vh;
-    line-height: 2.5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    line-height: 3vh;
 }
 
 .blog-post a
@@ -318,18 +333,26 @@ body
 
 .blog-post-title
 {
-    width: 50%;
+    width: 100%;
     height: auto;
-    font-size: 4vh;
-    font-weight: 400;
-    color: yellow;
+    font-size: 5vh;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 2vh;
+}
+
+.blog-post-title a
+{
+    text-decoration: none;
+    color: $primary-text-color;
 }
 
 .blog-post-meta-container
 {
     width: 100%;
-    height: auto;
+    height: 2.5vh;
     margin: auto;
+    border-bottom: solid 1px $divider-color;
 }
 
 .blog-post-meta
@@ -337,11 +360,18 @@ body
     width: 50%;
     height: auto;
     font-size: 2vh;
-    color: blue;
+    color: $primary-text-color;
     float: left;
     position: relative;
     text-align: left;
     margin-bottom: 2.5vh;
+    text-decoration: none;
+}
+
+.blog-post-meta a
+{
+    color: $primary-text-color;
+    text-decoration: none;
 }
 
 .blog-post-meta-info
@@ -356,10 +386,16 @@ body
     float: right;
     width: 50%;
     font-size: 2vh;
-    color: blue;
+    color: $primary-text-color;
     position: relative;
     text-align: right;
     margin-bottom: 2.5vh;
+}
+
+.blog-comments a
+{
+    color: $primary-text-color;
+    text-decoration: none;
 }
 
 .blog-thumbnail
@@ -368,7 +404,6 @@ body
     height: 33.3vh;
     overflow: hidden;
     margin: 0 auto;
-    padding-top: 2.5vh;
     display: block;
 }
 
@@ -379,6 +414,22 @@ body
     height: auto;
 }
 
+.blog-post > p img
+{
+    display: block;
+    margin: 1vw;
+}
+
+.alignright 
+{
+  float: right;
+}
+
+.alignleft 
+{
+  float: left;
+}
+
 ////////////////////////////////////////////////////////////COMMENTS /////////////////////////////////////////////////////////////////
 
 .container-comments
@@ -386,7 +437,7 @@ body
     width: 70vw;
     height: auto;
     margin: auto;
-    background-color: whitesmoke;
+    background-color: $text-icons-color;
     box-shadow: 0 1px 8px rgba(0,0,0,0.2);
 }
 
@@ -431,7 +482,7 @@ body
     font-size: 1.5vh;
     text-decoration: none;
     float: right;
-    color: black;
+    color: $primary-text-color;
 }
 
 .comment-meta.commentmetadata .comment-edit-link
@@ -447,14 +498,14 @@ body
 .comment-body p
 {
     clear: both;
-    color: black;
+    color: $primary-text-color;
     padding: 1vw;
     line-height: 3vh;
 }
 
 .comment-body a.comment-reply-link
 {
-    color: black;
+    color: $primary-text-color;
     font-weight: bold;
 }
 
@@ -495,7 +546,7 @@ textarea#comment
 {
     @extend .blog-post-title;
     width: 100%;
-    color: black;
+    color: $primary-text-color;
 }
 
 .comment-list li
@@ -561,14 +612,17 @@ textarea#comment
 .comment-respond .comment-form .logged-in-as a
 {
     font-weight: bold;
-    color: black;
+    color: $primary-text-color;
 }
 
 .form-submit #submit.submit
 {
-    background-color: blue;
     border-width: 0px;
     font-weight: bold;
+    height: 3vh;
+    width: 15%;
+    background-color: darkgray;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
 
 .form-submit #submit.submit:hover
@@ -589,18 +643,23 @@ textarea#comment
 
 .blog-post-card
 {
-    width: 350px;
-    height: 350px;
+    width: 370px;
+    height: 370px;
     margin: auto;
     margin-left: 2.5vw;
     margin-bottom: 2.5vw;
     float: left;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.2);
 }
 
 .blog-post-square
 {
     height: 350px;
+    width: 350px;
     position: relative;
+    margin: auto;
+    margin-top: 10px;
     overflow: hidden;
 }
 
@@ -648,7 +707,6 @@ textarea#comment
 .blog-post-square-hidden-image a
 {
     font-size: 24px;
-    background-color: aqua;
 }
 
 .blog-post-image-wrapper:hover > .blog-post-square-hidden-image
@@ -663,7 +721,7 @@ textarea#comment
     width: 70vw;
     height: auto;
     margin: auto;
-    color: black;
+    color: $light-primary-color;
     text-align: center;
 }
 
@@ -673,7 +731,7 @@ textarea#comment
     border-radius: 25px;
     text-decoration: none;
     list-style-type: none;
-    color: black;
+    color: $text-icons-color;
     padding: 1vw;
 }
 
@@ -695,7 +753,7 @@ textarea#comment
     width: 100vw;
     height: 5em;
     margin: auto;
-    background-color: bisque;
+    background-color: $light-primary-color;
     clear: both;
     padding-left: 0.5vw;
     padding-right: 0.5vw;
@@ -777,6 +835,16 @@ textarea#comment
     .sidebar-container
     {
         display: none;
+    }
+    
+    .content-portfolio-container
+    {
+        width: 100vw;
+    }
+    
+    .blog-post-card
+    {
+        margin-left: 5vw;
     }
 
 }
