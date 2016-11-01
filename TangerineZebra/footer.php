@@ -4,7 +4,9 @@
 
         <div class="footer-content">
         
-            <p>lalalllaal ik ben een footer</p>
+            <!--<p><?php the_author_meta( 'description', 1 ); ?> </p<p>test ik ben een discription. Ik ben Niels en ik vind programmeren leuk. Ik doe het al heel lang. En ooit word ik de beste programmeur ter wereld enzo.</p>-->
+            <?php wp_get_archives('type=monthly'); ?>
+            
         
         </div>
 

@@ -23,6 +23,12 @@
             
             </div>
             
+            <ul class="menu-desktop">
+
+                <li><a href="#"><?php wp_list_pages( '&title_li='); ?></a></li>
+
+            </ul>
+            
             <div class="mobile-menu">
                 
                 <div class="dropdown">
@@ -39,11 +45,7 @@
                 
             </div>
             
-            <ul class="menu-desktop">
 
-                <li><a href="#"><?php wp_list_pages( '&title_li='); ?></a></li>
-
-            </ul>
             
         </div>
         

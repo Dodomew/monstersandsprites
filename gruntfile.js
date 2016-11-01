@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         sync: {
             theme: {               
                 files: [
-                    { cwd: 'TangerineZebra/', src: ['**/*.js', '**/*.css', '**/*.php'], dest: 'C:/wamp64/www/monstersandsprites-local/wp-content/themes/TangerineZebra'} // makes all src relative to cwd 
+                    { cwd: 'TangerineZebra/', src: ['**/*.js', '**/*.css', '**/*.php'], dest: 'C:/wamp64/www/monstersandsprites/wp-content/themes/TangerineZebra'} // makes all src relative to cwd 
                 ],
                 verbose: true, // Default: false 
                 failOnError: true, // Fail the task when copying is not possible. Default: false 

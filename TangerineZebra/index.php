@@ -12,7 +12,7 @@
 
     ?>
 
-    <nav>
+    <nav class="nav-container">
         <ul class="pager">
             
             <?php
