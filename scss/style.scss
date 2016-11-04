@@ -55,6 +55,7 @@ $primary-color: #FFC107;
 $light-primary-color: #FFECB3;
 $text-icons-color: #212121;
 $accent-color: #4CAF50;
+$lighter-accent-color: #8BC34A;
 $primary-text-color: #212121;
 $secondary-text-color: #757575;
 $divider-color: #BDBDBD;
@@ -109,10 +110,15 @@ body
 {
     width: auto;
     height: 5vh;
-    color: #FFFFFF;
     float: left;
     font-size: 4vh;
     margin-left: 1vh;
+}
+
+.header-title a
+{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .menu-desktop
@@ -129,9 +135,15 @@ body
 {
     display: block;
     float: right;
-    padding: 12px;
+    padding-top: 1.29vh;
+    padding-bottom: 1.29vh;
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
     margin-right: 2.5vw;
     height: auto;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
 }
 
 .menu-desktop li:hover
@@ -267,9 +279,7 @@ body
     margin-top: 2.5vh;
     width: 90%;
     height: auto;
-    //background-color: bisque;
     border-radius: 5px;
-    //box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .list-unstyled
@@ -286,7 +296,6 @@ body
     width: 70vw;
     height: auto;
     margin: 0 auto;  
-    //margin-left: 22.5vw;
     margin-top: 5vh;
 }
 
@@ -295,7 +304,7 @@ body
     margin: auto;
     background-color: #FFFFFF;
     margin-bottom: 5vh;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
     width: 70vw;
     height: auto;
 }
@@ -344,7 +353,7 @@ body
 {
     width: 100%;
     height: auto;
-    font-size: 5vh;
+    font-size: 4vh;
     font-weight: 500;
     text-align: left;
     margin-bottom: 2vh;
@@ -463,6 +472,8 @@ body
 #reply-title.comment-reply-title
 {
     font-size: 3vh;
+    margin-bottom: 0.5vh;
+    font-weight: bold;
 }
 
 .comment-author.vcard
@@ -482,8 +493,8 @@ body
 
 .comment-list .vcard cite.fn
 {
-    font-weight: bold;
     margin-left: 1vw;
+    font-weight: bold;
 }
 
 .comment-meta.commentmetadata a
@@ -530,6 +541,15 @@ textarea
 textarea#comment
 {
     width: 50%;
+    border-color: $divider-color;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+textarea#comment:focus
+{
+    border-color: $accent-color;
 }
 
 #commentform.comment-form label
@@ -600,7 +620,7 @@ textarea#comment
 
 .comment-list li ul.children li.bypostauthor
 {
-    
+    color: $accent-color;
 }
 
 .comment-list li ul.children li.comment-author-admin
@@ -610,18 +630,29 @@ textarea#comment
 
 .comment-list .even
 {
-    background-color: gainsboro;
+    background-color: $lighter-accent-color;
 }
 
 .comment-list .odd
 {
-    background-color: grey;
+    background-color: $accent-color;
 }
 
 .comment-respond .comment-form .logged-in-as a
 {
-    font-weight: bold;
     color: $primary-text-color;
+    text-decoration: none;
+}
+
+p.logged-in-as a
+{
+    color: green;
+}
+
+p.comment-form-comment
+{
+    border-top: 1px solid $divider-color;
+    margin-top: 1vh;
 }
 
 .form-submit #submit.submit
@@ -630,8 +661,11 @@ textarea#comment
     font-weight: bold;
     height: 3vh;
     width: 15%;
-    background-color: darkgray;
+    background-color: $divider-color;
     box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all .2s;
 }
 
 .form-submit #submit.submit:hover
@@ -799,6 +833,9 @@ textarea#comment
     margin-bottom: 1.5vh;
     background-color: #FFFFFF;
     box-shadow: 0 1px 8px rgba(0,0,0,0.5);
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all .2s;
 }
 
 .footer-content li:hover
@@ -846,7 +883,7 @@ textarea#comment
     
     .content-desktop
     {
-        width: 100vw;
+        width: 95vw;
     }
     
     .content-post-desktop h1
@@ -868,7 +905,8 @@ textarea#comment
     
     .footer-container
     {
-        width: 100vw;
+        width: 95vw;
+        border-top: 0px solid $divider-color;
     }
     
     .sidebar-container
@@ -878,7 +916,7 @@ textarea#comment
     
     .content-portfolio-container
     {
-        width: 100vw;
+        width: 95vw;
     }
     
     .blog-post-card
@@ -886,15 +924,46 @@ textarea#comment
         margin-left: 5vw;
     }
     
+    .blog-post-meta
+    {
+        width: 70%;
+    }
+    
+    .blog-comments
+    {
+        width: 30%;
+    }
+    
     .footer-content li
     {
         margin-left: 2.5vw;
         margin-right: 2.5vw;
+        margin-bottom: 2.5vw;
     }
     
     .nav-container a 
     {
         padding: 2.5vw;
+    }
+    
+    .container-comments
+    {
+        width: 95vw;
+    }
+    
+    .form-submit #submit.submit
+    {
+        width: auto;
+    }
+    
+    textarea#comment
+    {
+        width: 96%;
+    }
+    
+    .blog-post
+    {
+        width: 95%;
     }
 
 }

@@ -4,7 +4,7 @@
 
     function startwordpress_scripts() 
     {
-        wp_enqueue_style( 'blog', get_template_directory_uri() . '/css/style.css' );
+        wp_enqueue_style( 'blog', get_template_directory_uri() . '/style.css' );
     }
 
     add_action( 'wp_enqueue_scripts', 'startwordpress_scripts' );
@@ -44,7 +44,7 @@
     //set x number of posts per page
     function set_posts_per_page( $query ) {
       if ( !is_admin() && $query->is_main_query() ) {
-        $query->set( 'posts_per_page', '4' );
+        $query->set( 'posts_per_page', '5' );
       }
     }
     add_action( 'pre_get_posts', 'set_posts_per_page');

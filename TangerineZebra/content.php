@@ -30,21 +30,21 @@
             
             </div>
                 
+            <div class="blog-comments">
+                
+                <a href="<?php comments_link(); ?>">
+
+                    <?php
+
+                        printf( _nx( '1 Comment', '%1$s Comments', get_comments_number(), 'comments title', 'textdomain' ), number_format_i18n(get_comments_number() ) ); 
+                    ?>
+
+                </a>
+                
             </div>
                 
-                <div class="blog-comments">
-                
-                    <a href="<?php comments_link(); ?>">
+            </div>
 
-                        <?php
-
-                            printf( _nx( '1 Comment', '%1$s Comments', get_comments_number(), 'comments title', 'textdomain' ), number_format_i18n(get_comments_number() ) ); 
-                        ?>
-
-                    </a>
-                
-                </div>
-                
            <?php if(has_post_thumbnail()): ?>
                 <figure class="blog-thumbnail">
                     <a href="<?php the_permalink() ?>" title="<?php the_title() ?>">

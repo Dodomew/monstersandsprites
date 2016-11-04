@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
-/* line 15, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 15, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,7 +21,7 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 28, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 28, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
@@ -36,13 +36,13 @@ $primary-text-color: #212121;
 $secondary-text-color: #757575;
 $divider-color: #BDBDBD;
 */
-/* line 66, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 67, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 html {
   min-height: 100%;
   height: 100%;
   position: relative; }
 
-/* line 73, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 74, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 body {
   width: 100%;
   height: 100%;
@@ -53,7 +53,7 @@ body {
   z-index: 1;
   background-color: #FFC107; }
 
-/* line 87, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 88, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .header-invisible {
   width: 100vw;
   height: 5vh;
@@ -62,7 +62,7 @@ body {
   position: relative;
   top: 0; }
 
-/* line 97, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 98, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .header {
   width: 100vw;
   height: 5vh;
@@ -72,16 +72,20 @@ body {
   z-index: 100;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5); }
 
-/* line 108, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 109, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .header-title {
   width: auto;
   height: 5vh;
-  color: #FFFFFF;
   float: left;
   font-size: 4vh;
   margin-left: 1vh; }
 
-/* line 118, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 118, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.header-title a {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+/* line 124, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .menu-desktop {
   display: block;
   width: auto;
@@ -90,25 +94,31 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 2vh; }
 
-/* line 128, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 134, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .menu-desktop li {
   display: block;
   float: right;
-  padding: 12px;
+  padding-top: 1.29vh;
+  padding-bottom: 1.29vh;
+  padding-left: 2.5vh;
+  padding-right: 2.5vh;
   margin-right: 2.5vw;
-  height: auto; }
+  height: auto;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
 
-/* line 137, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 149, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .menu-desktop li:hover {
   background-color: #4CAF50; }
 
-/* line 142, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 154, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .menu-desktop li a {
   text-decoration: none;
   list-style-type: none;
   color: #FFFFFF; }
 
-/* line 149, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 161, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .mobile-menu {
   display: none;
   width: 20vw;
@@ -116,7 +126,7 @@ body {
   float: right; }
 
 /* Dropdown Button */
-/* line 158, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 170, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropbtn {
   height: 5vh;
   width: 20vw;
@@ -128,18 +138,18 @@ body {
   background-color: #FFA000; }
 
 /* Dropdown button on hover & focus */
-/* line 171, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 183, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropbtn:hover, .dropbtn:focus {
   background-color: #4CAF50; }
 
 /* The container <div> - needed to position the dropdown content */
-/* line 177, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 189, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropdown {
   position: relative;
   display: inline-block; }
 
 /* Dropdown Content (Hidden by Default) */
-/* line 184, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 196, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -150,7 +160,7 @@ body {
   list-style-type: none; }
 
 /* Links inside the dropdown */
-/* line 196, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 208, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropdown-content a {
   color: #FFFFFF;
   padding: 12px 16px;
@@ -158,23 +168,23 @@ body {
   display: block; }
 
 /* Change color of dropdown links on hover */
-/* line 205, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 217, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropdown-content a:hover {
   background-color: #4CAF50; }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-/* line 211, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 223, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .show {
   display: block; }
 
-/* line 213, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 225, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .site-container {
   width: 100%;
   height: auto;
   min-height: 100%;
   position: relative; }
 
-/* line 223, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 235, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .sidebar-container {
   display: block;
   z-index: 1;
@@ -191,12 +201,12 @@ body {
   right: 0;
   overflow: hidden; }
 
-/* line 241, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 253, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .sidebar-container h4 {
   font-size: 4vh;
   margin-left: 1vw; }
 
-/* line 247, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 259, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .sidebar-about {
   height: auto;
   width: 90%;
@@ -204,12 +214,12 @@ body {
   margin-top: 10vh;
   border-radius: 5px; }
 
-/* line 258, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 270, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .sidebar-about p {
   font-size: 2vh;
   margin-left: 1vw; }
 
-/* line 264, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 276, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .sidebar-archive {
   margin: auto;
   margin-top: 2.5vh;
@@ -217,12 +227,12 @@ body {
   height: auto;
   border-radius: 5px; }
 
-/* line 275, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 285, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .list-unstyled {
   list-style-type: none;
   margin-left: 1vw; }
 
-/* line 283, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 293, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .content-container {
   position: relative;
   width: 70vw;
@@ -230,28 +240,28 @@ body {
   margin: 0 auto;
   margin-top: 5vh; }
 
-/* line 293, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 302, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .content-desktop, .content-desktop-single {
   margin: auto;
   background-color: #FFFFFF;
   margin-bottom: 5vh;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   width: 70vw;
   height: auto; }
 
-/* line 303, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 312, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .content-desktop-single {
   width: 70vw;
   height: auto;
   margin: auto; }
 
-/* line 311, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 320, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .content-post-desktop p {
   font-size: 2vh;
   line-height: 3vh;
   font-weight: 300; }
 
-/* line 320, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 329, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post {
   width: 80%;
   height: auto;
@@ -260,39 +270,39 @@ body {
   padding-top: 2.5vh;
   padding-bottom: 2.5vh; }
 
-/* line 330, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 339, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post p {
   font-size: 2vh;
   margin-top: 2vh;
   margin-bottom: 2vh;
   line-height: 3vh; }
 
-/* line 338, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 347, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post a {
   text-decoration: none; }
 
-/* line 343, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 352, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-title, .comments-title {
   width: 100%;
   height: auto;
-  font-size: 5vh;
+  font-size: 4vh;
   font-weight: 500;
   text-align: left;
   margin-bottom: 2vh; }
 
-/* line 353, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 362, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-title a, .comments-title a {
   text-decoration: none;
   color: #212121; }
 
-/* line 359, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 368, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-meta-container {
   width: 100%;
   height: 2.5vh;
   margin: auto;
   border-bottom: solid 1px #BDBDBD; }
 
-/* line 367, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 376, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-meta {
   width: 50%;
   height: auto;
@@ -304,18 +314,18 @@ body {
   margin-bottom: 2.5vh;
   text-decoration: none; }
 
-/* line 380, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 389, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-meta a {
   color: #212121;
   text-decoration: none; }
 
-/* line 386, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 395, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-meta-info {
   margin-right: 1vw;
   width: auto;
   float: left; }
 
-/* line 393, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 402, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-comments {
   float: right;
   width: 50%;
@@ -325,12 +335,12 @@ body {
   text-align: right;
   margin-bottom: 2.5vh; }
 
-/* line 404, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 413, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-comments a {
   color: #212121;
   text-decoration: none; }
 
-/* line 410, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 419, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-thumbnail {
   width: 100%;
   height: 33.3vh;
@@ -338,26 +348,26 @@ body {
   margin: 0 auto;
   display: block; }
 
-/* line 419, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 428, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-thumbnail img {
   display: block;
   width: 100%;
   height: auto; }
 
-/* line 426, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 435, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post > p img {
   display: block;
   margin: 1vw; }
 
-/* line 432, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 441, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .alignright {
   float: right; }
 
-/* line 437, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 446, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .alignleft {
   float: left; }
 
-/* line 444, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 453, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .container-comments {
   width: 70vw;
   height: auto;
@@ -365,7 +375,7 @@ body {
   background-color: #FFFFFF;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2); }
 
-/* line 453, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 462, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 #comments.comments-area {
   width: 80%;
   height: auto;
@@ -374,55 +384,57 @@ body {
   margin-bottom: 5vh;
   padding: 2vw; }
 
-/* line 463, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 472, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 #reply-title.comment-reply-title {
-  font-size: 3vh; }
+  font-size: 3vh;
+  margin-bottom: 0.5vh;
+  font-weight: bold; }
 
-/* line 468, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 479, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-author.vcard {
   float: left; }
 
-/* line 473, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 484, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-author.vcard img.photo {
   float: left; }
 
-/* line 478, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 489, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-author.vcard img.avatar {
   float: left; }
 
-/* line 483, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 494, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-list .vcard cite.fn {
-  font-weight: bold;
-  margin-left: 1vw; }
+  margin-left: 1vw;
+  font-weight: bold; }
 
-/* line 489, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 500, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-meta.commentmetadata a {
   font-size: 1.5vh;
   text-decoration: none;
   float: right;
   color: #212121; }
 
-/* line 497, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 508, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-meta.commentmetadata .comment-edit-link {
   font-weight: bold; }
 
-/* line 502, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 513, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-body {
   padding: 1vw; }
 
-/* line 507, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 518, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-body p {
   clear: both;
   color: #212121;
   padding: 1vw;
   line-height: 3vh; }
 
-/* line 515, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 526, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-body a.comment-reply-link {
   color: #212121;
   font-weight: bold; }
 
-/* line 521, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 532, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 textarea {
   margin: auto;
   width: 100%;
@@ -430,69 +442,93 @@ textarea {
   margin-top: 1vh;
   margin-bottom: 1vh; }
 
-/* line 530, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 541, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 textarea#comment {
-  width: 50%; }
+  width: 50%;
+  border-color: #BDBDBD;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
 
-/* line 535, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 550, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+textarea#comment:focus {
+  border-color: #4CAF50; }
+
+/* line 555, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 #commentform.comment-form label {
   display: none; }
 
-/* line 540, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 560, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .form-submit #submit.submit {
   height: 3vh;
   width: 10vw; }
 
-/* line 546, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 566, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-list {
   list-style-type: none;
   font-size: 2vh;
   margin-top: 2vh;
   margin-bottom: 2vh; }
 
-/* line 554, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 574, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comments-title {
   width: 100%;
   color: #212121; }
 
-/* line 561, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 581, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-list li {
   list-style-type: none; }
 
-/* line 611, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 621, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.comment-list li ul.children li.bypostauthor {
+  color: #4CAF50; }
+
+/* line 631, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-list .even {
-  background-color: gainsboro; }
+  background-color: #8BC34A; }
 
-/* line 616, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 636, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-list .odd {
-  background-color: grey; }
+  background-color: #4CAF50; }
 
-/* line 621, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 641, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-respond .comment-form .logged-in-as a {
-  font-weight: bold;
-  color: #212121; }
+  color: #212121;
+  text-decoration: none; }
 
-/* line 627, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 647, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+p.logged-in-as a {
+  color: green; }
+
+/* line 652, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+p.comment-form-comment {
+  border-top: 1px solid #BDBDBD;
+  margin-top: 1vh; }
+
+/* line 658, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .form-submit #submit.submit {
   border-width: 0px;
   font-weight: bold;
   height: 3vh;
   width: 15%;
-  background-color: darkgray;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); }
+  background-color: #BDBDBD;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
 
-/* line 637, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 671, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .form-submit #submit.submit:hover {
   background-color: #4CAF50; }
 
-/* line 644, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 678, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .content-portfolio-container {
   width: 70vw;
   min-height: 100%;
   height: 100%;
   margin: 0 auto; }
 
-/* line 653, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 687, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-card {
   width: 370px;
   height: 370px;
@@ -503,7 +539,7 @@ textarea#comment {
   background-color: #FFFFFF;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2); }
 
-/* line 665, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 699, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-square {
   height: 350px;
   width: 350px;
@@ -512,7 +548,7 @@ textarea#comment {
   margin-top: 10px;
   overflow: hidden; }
 
-/* line 675, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 709, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-image-wrapper {
   display: block;
   width: 100%;
@@ -520,22 +556,22 @@ textarea#comment {
   z-index: 1;
   transition: all 0.5s ease-in-out; }
 
-/* line 684, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 718, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-image-title {
   position: absolute;
   font-size: 2vh;
   z-index: 100; }
 
-/* line 691, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 725, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-square-visible-image {
   display: block; }
 
-/* line 696, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 730, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-square-visible-image img {
   max-width: 100%;
   height: auto; }
 
-/* line 702, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 736, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-square-hidden-image {
   position: absolute;
   display: block;
@@ -548,15 +584,15 @@ textarea#comment {
   -o-transition: all 0.8s ease;
   transition: all 0.8s ease; }
 
-/* line 716, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 750, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-square-hidden-image a {
   font-size: 24px; }
 
-/* line 721, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 755, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-image-wrapper:hover > .blog-post-square-hidden-image {
   top: 0px; }
 
-/* line 729, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 763, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .nav-container {
   width: 70vw;
   height: auto;
@@ -566,7 +602,7 @@ textarea#comment {
   color: #FFECB3;
   text-align: center; }
 
-/* line 740, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 774, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .nav-container a {
   font-size: 2vh;
   border-radius: 25px;
@@ -575,7 +611,7 @@ textarea#comment {
   color: #212121;
   padding: 1vw; }
 
-/* line 750, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 784, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .nav-container span {
   border-radius: 25px;
   text-decoration: none;
@@ -585,7 +621,7 @@ textarea#comment {
   color: #212121;
   text-decoration: underline; }
 
-/* line 763, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 797, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .footer-container {
   position: relative;
   width: 70vw;
@@ -594,13 +630,13 @@ textarea#comment {
   clear: both;
   border-top: solid 1px #BDBDBD; }
 
-/* line 773, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 807, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .footer-content {
   width: 100%;
   height: auto;
   margin: auto; }
 
-/* line 780, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 814, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .footer-content p {
   margin: auto;
   margin-top: 2vh;
@@ -608,7 +644,7 @@ textarea#comment {
   font-size: 2vh;
   padding: 1vh; }
 
-/* line 789, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 823, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .footer-content li {
   float: left;
   width: auto;
@@ -620,67 +656,90 @@ textarea#comment {
   margin-top: 1.5vh;
   margin-bottom: 1.5vh;
   background-color: #FFFFFF;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
 
-/* line 804, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 841, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .footer-content li:hover {
   background-color: #4CAF50; }
 
-/* line 809, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+/* line 846, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .footer-content li a {
   text-decoration: none;
   color: #212121;
   font-weight: bold; }
 
 @media screen and (max-width: 1024px) {
-  /* line 821, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+  /* line 858, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .menu-desktop {
     display: none; }
-  /* line 826, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+  /* line 863, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .menu-desktop li {
     display: none; }
-  /* line 831, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+  /* line 868, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .mobile-menu {
     display: block; }
-  /* line 836, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+  /* line 873, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .mobile-menu-button {
     display: block; }
-  /* line 841, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+  /* line 878, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-container {
     width: 100vw;
     margin-left: 0; }
-  /* line 847, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+  /* line 884, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-desktop, .content-desktop-single {
-    width: 100vw; }
-  /* line 852, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+    width: 95vw; }
+  /* line 889, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-post-desktop h1 {
     font-size: 5vh; }
-  /* line 857, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+  /* line 894, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-post-desktop p {
     font-size: 3vh;
     line-height: 4vh; }
-  /* line 863, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+  /* line 900, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-post-desktop-imagecontainer {
     width: 100%;
     height: 33vh; }
-  /* line 869, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+  /* line 906, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .footer-container {
-    width: 100vw; }
-  /* line 874, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+    width: 95vw;
+    border-top: 0px solid #BDBDBD; }
+  /* line 912, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .sidebar-container {
     display: none; }
-  /* line 879, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+  /* line 917, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-portfolio-container {
-    width: 100vw; }
-  /* line 884, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+    width: 95vw; }
+  /* line 922, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .blog-post-card {
     margin-left: 5vw; }
-  /* line 889, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+  /* line 927, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  .blog-post-meta {
+    width: 70%; }
+  /* line 932, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  .blog-comments {
+    width: 30%; }
+  /* line 937, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .footer-content li {
     margin-left: 2.5vw;
-    margin-right: 2.5vw; }
-  /* line 895, C:/Doortje sites/Niels Portfolio/scss/style.scss */
+    margin-right: 2.5vw;
+    margin-bottom: 2.5vw; }
+  /* line 944, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .nav-container a {
-    padding: 2.5vw; } }
+    padding: 2.5vw; }
+  /* line 949, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  .container-comments {
+    width: 95vw; }
+  /* line 954, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  .form-submit #submit.submit {
+    width: auto; }
+  /* line 959, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  textarea#comment {
+    width: 96%; }
+  /* line 964, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  .blog-post {
+    width: 95%; } }
 
 /*# sourceMappingURL=style.css.map */
