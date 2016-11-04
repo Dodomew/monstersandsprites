@@ -55,7 +55,8 @@ $primary-color: #FFC107;
 $light-primary-color: #FFECB3;
 $text-icons-color: #212121;
 $accent-color: #4CAF50;
-$lighter-accent-color: #8BC34A;
+$lighter-accent-color: #60CE5B;
+$light-accent-color: #57C85C;
 $primary-text-color: #212121;
 $secondary-text-color: #757575;
 $divider-color: #BDBDBD;
@@ -479,11 +480,13 @@ body
 .comment-author.vcard
 {
     float: left;
+    
 }
 
 .comment-author.vcard img.photo
 {
     float: left;
+    border: 4px solid $dark-primary-color;
 }
 
 .comment-author.vcard img.avatar
@@ -581,6 +584,9 @@ textarea#comment:focus
 .comment-list li
 {
     list-style-type: none;
+    margin-bottom: 1vh;
+    background-color: $lighter-accent-color;
+    padding: 1vw;
 }
 
 .comment-list p
@@ -590,7 +596,7 @@ textarea#comment:focus
 
 .comment-list li ul 
 {
-
+    
 }
 
 .comment-list li ul.children li
@@ -620,7 +626,23 @@ textarea#comment:focus
 
 .comment-list li ul.children li.bypostauthor
 {
-    color: $accent-color;
+    background-color: $accent-color;
+    margin-left: 0.5vw;
+}
+
+.comment-list li ul.children li.bypostauthor .odd
+{
+    background-color: $lighter-accent-color;
+}
+
+.comment-list li ul.children li.bypostauthor .even
+{
+    background-color: $accent-color;
+}
+
+.comment-list li ul.children li.bypostauthor p
+{
+
 }
 
 .comment-list li ul.children li.comment-author-admin
@@ -630,18 +652,32 @@ textarea#comment:focus
 
 .comment-list .even
 {
-    background-color: $lighter-accent-color;
+
 }
 
 .comment-list .odd
 {
-    background-color: $accent-color;
+
 }
 
 .comment-respond .comment-form .logged-in-as a
 {
     color: $primary-text-color;
     text-decoration: none;
+}
+
+.comment-reply-title a
+{
+    text-decoration: none;
+    color: $primary-text-color;
+}
+
+.comment-reply-title small
+{
+    text-decoration: none;
+    font-size: 2vh;
+    text-decoration: underline;
+    float: right;
 }
 
 p.logged-in-as a
@@ -798,20 +834,15 @@ p.comment-form-comment
 {
     position: relative;
     width: 70vw;
-    height: auto;
+    min-height: 10vh;
     margin: auto;
     clear: both;
-    border-top: solid 1px $divider-color;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.5);
+    overflow: auto;
 }
 
-.footer-content
-{
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-
-.footer-content p
+.footer-container p
 {
     margin: auto;
     margin-top: 2vh;
@@ -820,7 +851,7 @@ p.comment-form-comment
     padding: 1vh;
 }
 
-.footer-content li
+.footer-container li
 {
     float: left;
     width: auto;
@@ -831,19 +862,20 @@ p.comment-form-comment
     margin-right: 1vw;
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
-    background-color: #FFFFFF;
-    box-shadow: 0 1px 8px rgba(0,0,0,0.5);
+    margin-left: 1vw;
+    background-color: $divider-color;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
     -moz-transition: all .2s;
     -webkit-transition: all .2s;
     transition: all .2s;
 }
 
-.footer-content li:hover
+.footer-container li:hover
 {
     background-color: $accent-color;
 }
 
-.footer-content li a
+.footer-container li a
 {
     text-decoration: none;
     color: $text-icons-color;
