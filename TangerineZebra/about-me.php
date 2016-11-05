@@ -1,3 +1,9 @@
+<?php
+/**
+Template Name: About me
+ */
+?>
+
 <?php get_header(); ?>
 
     <?php 
