@@ -10,9 +10,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: test
 Text Domain: www.monstersandsprites.com
 */
-
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
-/* line 15, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 28, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -34,7 +33,7 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 28, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 41, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
@@ -49,13 +48,13 @@ $primary-text-color: #212121;
 $secondary-text-color: #757575;
 $divider-color: #BDBDBD;
 */
-/* line 68, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 81, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 html {
   min-height: 100%;
   height: 100%;
   position: relative; }
 
-/* line 75, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 88, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 body {
   width: 100%;
   height: 100%;
@@ -66,16 +65,7 @@ body {
   z-index: 1;
   background-color: #FFC107; }
 
-/* line 89, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
-.header-invisible {
-  width: 100vw;
-  height: 5vh;
-  margin: auto;
-  margin-bottom: 5vh;
-  position: relative;
-  top: 0; }
-
-/* line 99, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 102, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .header {
   width: 100vw;
   height: 5vh;
@@ -83,9 +73,10 @@ body {
   background-color: #FFA000;
   position: fixed;
   z-index: 100;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  top: 0; }
 
-/* line 110, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 114, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .header-title {
   width: auto;
   height: 5vh;
@@ -93,43 +84,39 @@ body {
   font-size: 4vh;
   margin-left: 1vh; }
 
-/* line 119, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 123, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .header-title a {
   text-decoration: none;
   color: #FFFFFF; }
 
-/* line 125, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 129, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .menu-desktop {
-  display: block;
   width: auto;
-  height: 5vh;
-  float: right;
-  font-family: "Roboto", sans-serif;
-  font-size: 2vh; }
+  height: 100%;
+  float: right; }
 
-/* line 135, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 136, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .menu-desktop li {
-  display: block;
+  height: 100%;
   float: right;
-  padding-top: 1.29vh;
-  padding-bottom: 1.29vh;
-  padding-left: 2.5vh;
-  padding-right: 2.5vh;
-  margin-right: 2.5vw;
-  height: auto;
+  margin-right: 2vw;
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  font-family: "Roboto", sans-serif;
+  font-size: 2vh;
+  list-style-type: none; }
 
-/* line 150, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 149, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .menu-desktop li:hover {
   background-color: #4CAF50; }
 
-/* line 155, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+/* line 154, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .menu-desktop li a {
+  display: block;
   text-decoration: none;
-  list-style-type: none;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  padding: 1.25vh 1vw 0 1vw; }
 
 /* line 162, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .mobile-menu {
@@ -204,7 +191,7 @@ body {
   width: 70vw;
   height: auto;
   margin: 0 auto;
-  margin-top: 5vh; }
+  margin-top: 10vh; }
 
 /* line 247, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .content-desktop, .content-desktop-single {
@@ -509,12 +496,12 @@ p.comment-form-comment {
   width: 70vw;
   min-height: 100%;
   height: auto;
-  overflow: auto;
   margin: 0 auto;
   margin-bottom: 2.5vh;
   background-color: #FFFFFF;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
-  text-align: center; }
+  text-align: center;
+  overflow: auto; }
 
 /* line 671, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-card {

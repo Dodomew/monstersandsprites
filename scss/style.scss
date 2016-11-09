@@ -99,16 +99,6 @@ body
 
 ////////////////////////////////////////////////////////////HEADER/////////////////////////////////////////////////////////////
 
-.header-invisible
-{
-    width: 100vw;
-    height: 5vh;
-    margin: auto;
-    margin-bottom: 5vh;
-    position: relative;
-    top: 0;
-}
-
 .header
 {
     width: 100vw;
@@ -118,6 +108,7 @@ body
     position: fixed;
     z-index: 100;
     box-shadow: 0 1px 6px rgba(0,0,0,0.5);
+    top: 0;
 }
 
 .header-title
@@ -137,27 +128,22 @@ body
 
 .menu-desktop
 {
-    display: block;
     width: auto;
-    height: 5vh;
+    height: 100%;
     float: right;
-    font-family: $font-normal;
-    font-size: 2vh;
 }
 
 .menu-desktop li
 {
-    display: block;
+    height: 100%;
     float: right;
-    padding-top: 1.29vh;
-    padding-bottom: 1.29vh;
-    padding-left: 2.5vh;
-    padding-right: 2.5vh;
-    margin-right: 2.5vw;
-    height: auto;
+    margin-right: 2vw;
     -moz-transition: all .5s;
     -webkit-transition: all .5s;
     transition: all .5s;
+    font-family: $font-normal;
+    font-size: 2vh;
+    list-style-type: none;
 }
 
 .menu-desktop li:hover
@@ -167,9 +153,10 @@ body
 
 .menu-desktop li a
 {
+    display: block;
     text-decoration: none;
-    list-style-type: none;
     color: #FFFFFF;
+    padding: 1.25vh 1vw 0 1vw;
 }
 
 .mobile-menu
@@ -254,7 +241,7 @@ body
     width: 70vw;
     height: auto;
     margin: 0 auto;  
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
 
 .content-desktop
@@ -673,12 +660,12 @@ p.comment-form-comment
     width: 70vw;
     min-height: 100%;
     height: auto;
-    overflow: auto;
     margin: 0 auto;
     margin-bottom: 2.5vh;
     background-color: #FFFFFF;
     box-shadow: 0 1px 8px rgba(0,0,0,0.5);
     text-align: center;
+    overflow: auto;
 }
 
 .blog-post-card
