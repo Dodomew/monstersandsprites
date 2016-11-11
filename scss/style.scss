@@ -1,6 +1,3 @@
-//http://localhost/monstersandsprites-local/ WAMP
-//resets
-
 /*
 Theme Name: TangerineZebra
 Theme URI: https://wordpress.org/themes/twentyfifteen/
@@ -50,19 +47,6 @@ footer, header, hgroup, menu, nav, section
 
 //font variables
 $font-normal: 'Roboto', sans-serif;
-
-//variables colors
-/* blue + orange
-$dark-primary-color: #303F9F;
-$primary-color: #3F51B5;
-$light-primary-color: #C5CAE9;
-$text-icons-color: #FFFFFF;
-$accent-color: #FF5722;
-$primary-text-color: #212121;
-$secondary-text-color: #757575;
-$divider-color: #BDBDBD;
-*/
-
 $dark-primary-color: #FFA000;
 $primary-color: #FFC107;
 $light-primary-color: #FFECB3;
@@ -261,6 +245,7 @@ body
     min-height: 50vh;
     margin: auto;
     margin-bottom: 2.5vh;
+	margin-top: 10vh;
 }
 
 .content-post-desktop p
@@ -284,8 +269,7 @@ body
 
 .blog-post p
 {
-    font-size: 2vh;
-    margin-top: 2vh;
+    font-size: 125%;
     margin-bottom: 2vh;
     line-height: 3vh;
 }
@@ -299,10 +283,10 @@ body
 {
     width: 100%;
     height: auto;
-    font-size: 4vh;
+    font-size: 250%;
     font-weight: 500;
     text-align: left;
-    margin-bottom: 2vh;
+    margin-bottom: 1.5vh;
 }
 
 .blog-post-title a
@@ -317,13 +301,14 @@ body
     height: 2.5vh;
     margin: auto;
     border-bottom: solid 1px $divider-color;
+	margin-bottom: 2vh;
 }
 
 .blog-post-meta
 {
     width: 50%;
     height: auto;
-    font-size: 2vh;
+    font-size: 100%;
     color: $primary-text-color;
     float: left;
     position: relative;
@@ -348,7 +333,7 @@ body
 {
     float: right;
     width: 50%;
-    font-size: 2vh;
+    font-size: 100%;
     color: $primary-text-color;
     position: relative;
     text-align: right;
@@ -416,7 +401,7 @@ body
 
 #reply-title.comment-reply-title
 {
-    font-size: 3vh;
+    font-size: 110%;
     margin-bottom: 0.5vh;
     font-weight: bold;
 }
@@ -446,7 +431,7 @@ body
 
 .comment-meta.commentmetadata a
 {
-    font-size: 1.5vh;
+    font-size: 100%;
     text-decoration: none;
     float: right;
     color: $primary-text-color;
@@ -513,7 +498,7 @@ textarea#comment:focus
 .comment-list
 {
     list-style-type: none;
-    font-size: 2vh;
+    font-size: 100%;
     margin-top: 2vh;
     margin-bottom: 2vh;
 }
@@ -533,41 +518,6 @@ textarea#comment:focus
     padding: 1vw;
 }
 
-.comment-list p
-{
-
-}
-
-.comment-list li ul 
-{
-    
-}
-
-.comment-list li ul.children li
-{
-    
-}
-
-.comment-list li ul.children li.alt 
-{
-    
-}
-
-.comment-list li ul.children li.byuser
-{
-    
-}
-
-.comment-list li.byuser
-{
-    
-}
-
-.comment-list li ul.children li.comment
-{
-    
-}
-
 .comment-list li ul.children li.bypostauthor
 {
     background-color: $accent-color;
@@ -582,26 +532,6 @@ textarea#comment:focus
 .comment-list li ul.children li.bypostauthor .even
 {
     background-color: $accent-color;
-}
-
-.comment-list li ul.children li.bypostauthor p
-{
-
-}
-
-.comment-list li ul.children li.comment-author-admin
-{
-    
-}
-
-.comment-list .even
-{
-
-}
-
-.comment-list .odd
-{
-
 }
 
 .comment-respond .comment-form .logged-in-as a
@@ -619,7 +549,7 @@ textarea#comment:focus
 .comment-reply-title small
 {
     text-decoration: none;
-    font-size: 2vh;
+    font-size: 100%;
     text-decoration: underline;
     float: right;
 }
@@ -662,6 +592,7 @@ p.comment-form-comment
     height: auto;
     margin: 0 auto;
     margin-bottom: 2.5vh;
+	margin-top: 10vh;
     background-color: #FFFFFF;
     box-shadow: 0 1px 8px rgba(0,0,0,0.5);
     text-align: center;
@@ -703,15 +634,16 @@ p.comment-form-comment
 .blog-post-image-title
 {
     position: absolute;
-    font-size: 2vh;
+    font-size: 100%;
     z-index: 100;
     background-color: $accent-color;
     width: 350px;
-    height: 100px;
+    height: 75px;
     display: block;
-    top: 250px;
+    top: 275px;
     color: #FFFFFF;
-    padding: 1vw;
+	text-align: center;
+	padding-top: 0.5vh;
 }
 
 .blog-post-square-visible-image
@@ -808,7 +740,7 @@ p.comment-form-comment
     margin: auto;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    font-size: 2vh;
+    font-size: 100%;
     padding: 1vh;
 }
 

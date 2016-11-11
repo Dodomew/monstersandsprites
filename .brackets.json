@@ -9,7 +9,8 @@
                 "sourceComments": true,
                 "outputStyle": "nested"
             },
-            "linting.collapsed": false
+            "linting.collapsed": false,
+            "useTabChar": true
         }
     }
 }

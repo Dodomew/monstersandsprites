@@ -19,7 +19,7 @@
             
             <div class="header-title">
             
-                <a href="http://localhost/monstersandsprites-local/"><h1>Niels Uiterwijk</h1></a>
+                <a href="<?php echo get_home_url(); ?>"><h1>Niels Uiterwijk</h1></a>
             
             </div>
             
