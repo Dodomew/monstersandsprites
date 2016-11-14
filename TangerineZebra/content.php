@@ -38,9 +38,20 @@
 
                             printf( _nx( '1 Comment', '%1$s Comments', get_comments_number(), 'comments title', 'textdomain' ), number_format_i18n(get_comments_number() ) ); 
                         ?>
-
+                        
                     </a>
-
+                    
+                </div>
+                         
+                <div class="category-display">
+                
+                    <?php
+                        foreach((get_the_category()) as $category) 
+                        { 
+                            echo $category->cat_name . ' '; 
+                        } 
+                    ?>
+                
                 </div>
                 
             </div>

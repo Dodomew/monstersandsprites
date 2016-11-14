@@ -11,7 +11,7 @@ Tags: test
 Text Domain: www.monstersandsprites.com
 */
 
-html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,   
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -332,7 +332,7 @@ body
 .blog-comments
 {
     float: right;
-    width: 50%;
+    width: auto;
     font-size: 100%;
     color: $primary-text-color;
     position: relative;
@@ -360,6 +360,13 @@ body
     display: block;
     width: 100%;
     height: auto;
+}
+
+.category-display
+{
+	float: right;
+	margin-left: 1vw;
+	margin-right: 1vw;
 }
 
 .blog-post > p img

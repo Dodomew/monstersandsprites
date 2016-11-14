@@ -11,7 +11,6 @@ Tags: test
 Text Domain: www.monstersandsprites.com
 */
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
-/* line 25, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -30,21 +29,21 @@ time, mark, audio, video {
   outline: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
-/* line 38, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
-/* line 65, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 html {
   min-height: 100%;
   height: 100%;
-  position: relative; }
+  position: relative;
+}
 
-/* line 72, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 body {
   width: 100%;
   height: 100%;
@@ -53,9 +52,9 @@ body {
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   z-index: 1;
-  background-color: #FFC107; }
+  background-color: #FFC107;
+}
 
-/* line 86, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .header {
   width: 100vw;
   height: 5vh;
@@ -64,60 +63,60 @@ body {
   position: fixed;
   z-index: 100;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
-  top: 0; }
+  top: 0;
+}
 
-/* line 98, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .header-title {
   width: auto;
   height: 5vh;
   float: left;
   font-size: 4vh;
-  margin-left: 1vh; }
+  margin-left: 1vh;
+}
 
-/* line 107, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .header-title a {
   text-decoration: none;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+}
 
-/* line 113, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .menu-desktop {
   width: auto;
   height: 100%;
-  float: right; }
+  float: right;
+}
 
-/* line 120, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .menu-desktop li {
   height: 100%;
   float: right;
   margin-right: 2vw;
-  -moz-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
   font-family: "Roboto", sans-serif;
   font-size: 2vh;
-  list-style-type: none; }
+  list-style-type: none;
+}
 
-/* line 133, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .menu-desktop li:hover {
-  background-color: #4CAF50; }
+  background-color: #4CAF50;
+}
 
-/* line 138, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .menu-desktop li a {
   display: block;
   text-decoration: none;
   color: #FFFFFF;
-  padding: 1.25vh 1vw 0 1vw; }
+  padding: 1.25vh 1vw 0 1vw;
+}
 
-/* line 146, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .mobile-menu {
   display: none;
   width: 20vw;
   height: 5vh;
   float: right;
-  z-index: 100; }
+  z-index: 100;
+}
 
 /* Dropdown Button */
-/* line 156, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropbtn {
   height: 5vh;
   width: 20vw;
@@ -126,21 +125,21 @@ body {
   background-image: url(./images/icon_menu_stripes_32.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #FFA000; }
+  background-color: #FFA000;
+}
 
 /* Dropdown button on hover & focus */
-/* line 170, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #4CAF50; }
+  background-color: #4CAF50;
+}
 
 /* The container <div> - needed to position the dropdown content */
-/* line 176, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropdown {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+}
 
 /* Dropdown Content (Hidden by Default) */
-/* line 183, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -148,106 +147,106 @@ body {
   min-width: 33.3vw;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   right: 0;
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 /* Links inside the dropdown */
-/* line 195, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropdown-content a {
   color: #FFFFFF;
   padding: 12px 16px;
   text-decoration: none;
-  display: block; }
+  display: block;
+}
 
 /* Change color of dropdown links on hover */
-/* line 204, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .dropdown-content a:hover {
-  background-color: #4CAF50; }
+  background-color: #4CAF50;
+}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-/* line 210, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .show {
-  display: block; }
+  display: block;
+}
 
-/* line 212, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .site-container {
   width: 100%;
   height: auto;
   min-height: 100%;
-  position: relative; }
+  position: relative;
+}
 
-/* line 222, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .content-container {
   position: relative;
   width: 70vw;
   height: auto;
   margin: 0 auto;
-  margin-top: 10vh; }
+  margin-top: 10vh;
+}
 
-/* line 231, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .content-desktop, .content-desktop-single {
   margin: auto;
   background-color: #FFFFFF;
   margin-bottom: 5vh;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   width: 70vw;
-  height: auto; }
+  height: auto;
+}
 
-/* line 241, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .content-desktop-single {
   width: 70vw;
   min-height: 50vh;
   margin: auto;
   margin-bottom: 2.5vh;
-  margin-top: 10vh; }
+  margin-top: 10vh;
+}
 
-/* line 251, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .content-post-desktop p {
   font-size: 2vh;
   line-height: 3vh;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
-/* line 260, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post {
   width: 80%;
   height: auto;
   margin: 0 auto;
   position: relative;
   padding-top: 2.5vh;
-  padding-bottom: 2.5vh; }
+  padding-bottom: 2.5vh;
+}
 
-/* line 270, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post p {
   font-size: 125%;
   margin-bottom: 2vh;
-  line-height: 3vh; }
+  line-height: 3vh;
+}
 
-/* line 277, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-/* line 282, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-title, .comments-title {
   width: 100%;
   height: auto;
   font-size: 250%;
   font-weight: 500;
   text-align: left;
-  margin-bottom: 1.5vh; }
+  margin-bottom: 1.5vh;
+}
 
-/* line 292, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-title a, .comments-title a {
   text-decoration: none;
-  color: #212121; }
+  color: #212121;
+}
 
-/* line 298, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-meta-container {
   width: 100%;
   height: 2.5vh;
   margin: auto;
   border-bottom: solid 1px #BDBDBD;
-  margin-bottom: 2vh; }
+  margin-bottom: 2vh;
+}
 
-/* line 307, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-meta {
   width: 50%;
   height: auto;
@@ -256,217 +255,223 @@ body {
   float: left;
   position: relative;
   text-align: left;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-/* line 319, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-meta a {
   color: #212121;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-/* line 325, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-meta-info {
   margin-right: 1vw;
   width: auto;
-  float: left; }
+  float: left;
+}
 
-/* line 332, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-comments {
   float: right;
-  width: 50%;
+  width: auto;
   font-size: 100%;
   color: #212121;
   position: relative;
-  text-align: right; }
+  text-align: right;
+}
 
-/* line 342, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-comments a {
   color: #212121;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-/* line 348, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-thumbnail {
   width: 100%;
   height: 33.3vh;
   overflow: hidden;
   margin: 0 auto;
   display: block;
-  margin-top: 2.5vh; }
+  margin-top: 2.5vh;
+}
 
-/* line 358, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-thumbnail img {
   display: block;
   width: 100%;
-  height: auto; }
+  height: auto;
+}
 
-/* line 365, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+.category-display {
+  float: right;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
 .blog-post > p img {
   display: block;
-  margin: 1vw; }
+  margin: 1vw;
+}
 
-/* line 371, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .alignright {
-  float: right; }
+  float: right;
+}
 
-/* line 376, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .alignleft {
-  float: left; }
+  float: left;
+}
 
-/* line 383, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .container-comments {
   width: 70vw;
   height: auto;
   margin: auto;
   background-color: #FFFFFF;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
 
-/* line 392, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 #comments.comments-area {
   width: 80%;
   height: auto;
   margin: auto;
   margin-top: 5vh;
   margin-bottom: 5vh;
-  padding: 2vw; }
+  padding: 2vw;
+}
 
-/* line 402, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 #reply-title.comment-reply-title {
   font-size: 110%;
   margin-bottom: 0.5vh;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
-/* line 409, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-author.vcard {
-  float: left; }
+  float: left;
+}
 
-/* line 415, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-author.vcard img.photo {
   float: left;
-  border: 4px solid #FFA000; }
+  border: 4px solid #FFA000;
+}
 
-/* line 421, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-author.vcard img.avatar {
-  float: left; }
+  float: left;
+}
 
-/* line 426, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-list .vcard cite.fn {
   margin-left: 1vw;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
-/* line 432, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-meta.commentmetadata a {
   font-size: 100%;
   text-decoration: none;
   float: right;
-  color: #212121; }
+  color: #212121;
+}
 
-/* line 440, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-meta.commentmetadata .comment-edit-link {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
-/* line 445, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-body {
-  padding: 1vw; }
+  padding: 1vw;
+}
 
-/* line 450, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-body p {
   clear: both;
   color: #212121;
   padding: 1vw;
-  line-height: 3vh; }
+  line-height: 3vh;
+}
 
-/* line 458, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-body a.comment-reply-link {
   color: #212121;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
-/* line 464, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 textarea {
   margin: auto;
   width: 100%;
   border-width: 5px;
   margin-top: 1vh;
-  margin-bottom: 1vh; }
+  margin-bottom: 1vh;
+}
 
-/* line 473, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 textarea#comment {
   width: 50%;
   border-color: #BDBDBD;
-  -moz-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
 
-/* line 482, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 textarea#comment:focus {
-  border-color: #4CAF50; }
+  border-color: #4CAF50;
+}
 
-/* line 487, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 #commentform.comment-form label {
-  display: none; }
+  display: none;
+}
 
-/* line 492, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .form-submit #submit.submit {
   height: 3vh;
-  width: 10vw; }
+  width: 10vw;
+}
 
-/* line 498, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-list {
   list-style-type: none;
   font-size: 100%;
   margin-top: 2vh;
-  margin-bottom: 2vh; }
+  margin-bottom: 2vh;
+}
 
-/* line 506, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comments-title {
   width: 100%;
-  color: #212121; }
+  color: #212121;
+}
 
-/* line 513, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-list li {
   list-style-type: none;
   margin-bottom: 1vh;
   background-color: #60CE5B;
-  padding: 1vw; }
+  padding: 1vw;
+}
 
-/* line 521, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-list li ul.children li.bypostauthor {
   background-color: #4CAF50;
-  margin-left: 0.5vw; }
+  margin-left: 0.5vw;
+}
 
-/* line 527, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-list li ul.children li.bypostauthor .odd {
-  background-color: #60CE5B; }
+  background-color: #60CE5B;
+}
 
-/* line 532, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-list li ul.children li.bypostauthor .even {
-  background-color: #4CAF50; }
+  background-color: #4CAF50;
+}
 
-/* line 537, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-respond .comment-form .logged-in-as a {
   color: #212121;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-/* line 543, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-reply-title a {
   text-decoration: none;
-  color: #212121; }
+  color: #212121;
+}
 
-/* line 549, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .comment-reply-title small {
   text-decoration: none;
   font-size: 100%;
   text-decoration: underline;
-  float: right; }
+  float: right;
+}
 
-/* line 557, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 p.logged-in-as a {
-  color: green; }
+  color: green;
+}
 
-/* line 562, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 p.comment-form-comment {
   border-top: 1px solid #BDBDBD;
-  margin-top: 1vh; }
+  margin-top: 1vh;
+}
 
-/* line 568, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .form-submit #submit.submit {
   border-width: 0px;
   font-weight: bold;
@@ -474,15 +479,15 @@ p.comment-form-comment {
   width: 15%;
   background-color: #BDBDBD;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  -moz-transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s; }
+  -moz-transition: all .2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
 
-/* line 581, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .form-submit #submit.submit:hover {
-  background-color: #4CAF50; }
+  background-color: #4CAF50;
+}
 
-/* line 588, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .content-portfolio-container {
   width: 70vw;
   min-height: 100%;
@@ -493,9 +498,9 @@ p.comment-form-comment {
   background-color: #FFFFFF;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
   text-align: center;
-  overflow: auto; }
+  overflow: auto;
+}
 
-/* line 602, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-card {
   width: 356px;
   height: 356px;
@@ -506,25 +511,25 @@ p.comment-form-comment {
   margin-bottom: 1.5vw;
   background-color: #BDBDBD;
   transition: all 0.5s ease-in-out;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
 
-/* line 616, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-square {
   height: 350px;
   width: 350px;
   margin: 3px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
-/* line 625, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-image-wrapper {
   display: block;
   width: 100%;
   height: 100%;
   z-index: 1;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+}
 
-/* line 634, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-image-title {
   position: absolute;
   font-size: 100%;
@@ -536,43 +541,43 @@ p.comment-form-comment {
   top: 275px;
   color: #FFFFFF;
   text-align: center;
-  padding-top: 0.5vh; }
+  padding-top: 0.5vh;
+}
 
-/* line 649, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-square-visible-image {
-  display: block; }
+  display: block;
+}
 
-/* line 654, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-square-visible-image img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+}
 
-/* line 660, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-square-hidden-image {
   position: absolute;
   display: block;
   width: 100%;
   height: 100%;
   top: 350px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
 
-/* line 674, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-square-hidden-image a {
-  font-size: 24px; }
+  font-size: 24px;
+}
 
-/* line 679, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-image-wrapper:hover > .blog-post-square-hidden-image {
-  top: 0px; }
+  top: 0px;
+}
 
-/* line 684, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .blog-post-card:hover {
-  background-color: #4CAF50; }
+  background-color: #4CAF50;
+}
 
-/* line 692, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .nav-container {
   width: 70vw;
   height: auto;
@@ -580,18 +585,18 @@ p.comment-form-comment {
   margin-bottom: 1vh;
   margin-top: 1vh;
   color: #FFECB3;
-  text-align: center; }
+  text-align: center;
+}
 
-/* line 703, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .nav-container a {
   font-size: 2vh;
   border-radius: 25px;
   text-decoration: none;
   list-style-type: none;
   color: #212121;
-  padding: 1vw; }
+  padding: 1vw;
+}
 
-/* line 713, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .nav-container span {
   border-radius: 25px;
   text-decoration: none;
@@ -599,9 +604,9 @@ p.comment-form-comment {
   padding: 1vw;
   font-size: 3vh;
   color: #212121;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
-/* line 726, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .footer-container {
   position: relative;
   width: 70vw;
@@ -610,17 +615,17 @@ p.comment-form-comment {
   clear: both;
   background-color: #FFFFFF;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
-  overflow: auto; }
+  overflow: auto;
+}
 
-/* line 738, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .footer-container p {
   margin: auto;
   margin-top: 2vh;
   margin-bottom: 2vh;
   font-size: 100%;
-  padding: 1vh; }
+  padding: 1vh;
+}
 
-/* line 747, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .footer-container li {
   float: left;
   width: auto;
@@ -634,80 +639,80 @@ p.comment-form-comment {
   margin-left: 1vw;
   background-color: #BDBDBD;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-  -moz-transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s; }
+  -moz-transition: all .2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
 
-/* line 766, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .footer-container li:hover {
-  background-color: #4CAF50; }
+  background-color: #4CAF50;
+}
 
-/* line 771, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
 .footer-container li a {
   text-decoration: none;
   color: #212121;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 @media screen and (max-width: 1024px) {
-  /* line 783, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .menu-desktop {
-    display: none; }
+    display: none;
+  }
 
-  /* line 788, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .menu-desktop li {
-    display: none; }
+    display: none;
+  }
 
-  /* line 793, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .menu-desktop li:active {
-    background-color: #4CAF50; }
+    background-color: #4CAF50;
+  }
 
-  /* line 798, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .mobile-menu {
-    display: block; }
+    display: block;
+  }
 
-  /* line 803, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .mobile-menu-button {
-    display: block; }
+    display: block;
+  }
 
-  /* line 808, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-container {
     width: 100vw;
-    margin-left: 0; }
+    margin-left: 0;
+  }
 
-  /* line 814, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-desktop, .content-desktop-single {
-    width: 95vw; }
+    width: 95vw;
+  }
 
-  /* line 819, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-post-desktop h1 {
-    font-size: 5vh; }
+    font-size: 5vh;
+  }
 
-  /* line 824, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-post-desktop p {
     font-size: 3vh;
-    line-height: 4vh; }
+    line-height: 4vh;
+  }
 
-  /* line 830, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-post-desktop-imagecontainer {
     width: 100%;
-    height: 33vh; }
+    height: 33vh;
+  }
 
-  /* line 836, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .footer-container {
     width: 95vw;
-    border-top: 0px solid #BDBDBD; }
+    border-top: 0px solid #BDBDBD;
+  }
 
-  /* line 842, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .sidebar-container {
-    display: none; }
+    display: none;
+  }
 
-  /* line 847, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .content-portfolio-container {
     width: 95vw;
     background-color: #FFFFFF;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  }
 
-  /* line 854, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .blog-post-card {
     margin-bottom: 2.5vh;
     width: 300px;
@@ -716,75 +721,76 @@ p.comment-form-comment {
     margin-top: 2vh;
     margin-bottom: 2vh;
     background-color: transparent;
-    box-shadow: 0 0 0 transparent; }
+    box-shadow: 0 0 0 transparent;
+  }
 
-  /* line 866, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .blog-post-square {
     width: 294px;
     height: 294px;
     margin: 3px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  }
 
-  /* line 874, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .blog-post-square-hidden-image {
-    top: 0; }
+    top: 0;
+  }
 
-  /* line 879, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .blog-post-image-title {
     top: 250px;
     width: 300px;
     background-color: rgba(76, 175, 80, 0.75);
-    z-index: 1; }
+    z-index: 1;
+  }
 
-  /* line 887, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .blog-post-square-hidden-image img {
-    display: none; }
+    display: none;
+  }
 
-  /* line 892, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .blog-post-meta {
-    width: 70%; }
+    width: 70%;
+  }
 
-  /* line 897, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .blog-comments {
-    width: 30%; }
+    width: 30%;
+  }
 
-  /* line 902, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .footer-content li {
     margin-left: 2.5vw;
     margin-right: 2.5vw;
-    margin-bottom: 2.5vw; }
+    margin-bottom: 2.5vw;
+  }
 
-  /* line 909, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .footer-container li:active {
-    background-color: #4CAF50; }
+    background-color: #4CAF50;
+  }
 
-  /* line 914, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .nav-container a {
-    padding: 3vw; }
+    padding: 3vw;
+  }
 
-  /* line 919, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .container-comments {
-    width: 95vw; }
+    width: 95vw;
+  }
 
-  /* line 924, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .form-submit #submit.submit {
-    width: auto; }
+    width: auto;
+  }
 
-  /* line 929, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   textarea#comment {
-    width: 96%; }
+    width: 96%;
+  }
 
-  /* line 934, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .blog-post {
-    width: 95%; }
+    width: 95%;
+  }
 
-  /* line 939, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   #comments.comments-area {
-    width: 90%; }
+    width: 90%;
+  }
 
-  /* line 944, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .comment-author.vcard img {
-    display: none; } }
-/*# sourceMappingURL=style.css.map */
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
