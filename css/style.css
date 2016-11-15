@@ -762,6 +762,9 @@ p.comment-form-comment {
     width: 90%; }
   /* line 951, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
   .comment-author.vcard img {
-    display: none; } }
+    display: none; }
+  /* line 956, Z:/Sites/Site - Monstersandsprites/scss/style.scss */
+  .blog-post-meta-container {
+    border-bottom: solid 0px #FFFFFF; } }
 
 /*# sourceMappingURL=style.css.map */

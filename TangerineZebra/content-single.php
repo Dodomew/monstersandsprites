@@ -27,7 +27,18 @@
                     <?php the_date(); ?>
                     
                 </div>
-
+            
+            </div>
+            
+            <div class="category-display">
+                
+                <?php
+                    foreach((get_the_category()) as $category) 
+                    { 
+                        echo $category->cat_name . ' '; 
+                    } 
+                ?>
+            
             </div>
             
         </div>

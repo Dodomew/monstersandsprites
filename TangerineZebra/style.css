@@ -791,6 +791,10 @@ p.comment-form-comment {
   .comment-author.vcard img {
     display: none;
   }
+
+  .blog-post-meta-container {
+    border-bottom: solid 0px #FFFFFF;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
